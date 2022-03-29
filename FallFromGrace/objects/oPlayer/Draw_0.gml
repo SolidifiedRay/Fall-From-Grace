@@ -1,2 +1,0 @@
-//DrawHitBox();
-draw_self();
