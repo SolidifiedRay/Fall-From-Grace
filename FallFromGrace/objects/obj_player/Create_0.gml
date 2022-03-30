@@ -9,19 +9,23 @@ walksp = 6;
 walkinc = walksp/4;
 walkdec = walksp/8;
 airsp = 6;
-airinc = airsp/4;
+airinc = airsp/8;
 airdec = airsp/12;
 
 in_wall_slide = false;
 wall_slide_timer = 0;
 wall_slide_dir = 1;
 wall_jump_trail = 0;
+wall_jump_timer = 20;
 
 grounded = 0;
 //dashsp = 5.5;
 jumpsp = 4.7;
 wjumpvsp = 5;
 wjumphsp = 8;
+
+wjumpinc = 0.1;
+wjumpdec = 0.1;
 
 hookgrv = 0.65;
 hookready = true;

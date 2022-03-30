@@ -130,12 +130,19 @@ if (grounded > 0) {
 	}
 	*/
 } else {
-	if (hvec == 0 || hvec == -sign(hsp)) {
-		hsp -= sign(hsp) * airdec;
-		if (abs(hsp) < airinc) hsp = 0;
+	if (wall_jump_trail > 0) {
+		ainc = wjumpinc;
+		adec = wjumpdec;
+	} else {
+		ainc = airinc;
+		adec = airdec;
 	}
-	if (abs(hsp + hvec * airinc) < airsp) {
-		hsp += hvec * airinc;
+	if (hvec == 0 || hvec == -sign(hsp)) {
+		hsp -= sign(hsp) * adec;
+		if (abs(hsp) < ainc) hsp = 0;
+	}
+	if (abs(hsp + hvec * ainc) < airsp) {
+		hsp += hvec * ainc;
 	}
 	if (abs(hsp) > airsp) {
 		hsp = sign(hsp) * airsp;
@@ -173,7 +180,7 @@ if ((grounded > 0) || (in_wall_slide)) && (jump) {
 	if (in_wall_slide) {
 		hsp = -wjumphsp * wall_slide_dir;
 		vsp = -wjumpvsp;
-		wall_jump_trail = 15;
+		wall_jump_trail = wall_jump_timer;
 	}
 	else {
 		vsp = -jumpsp;
