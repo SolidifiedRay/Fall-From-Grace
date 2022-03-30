@@ -92,8 +92,10 @@ else if (down) {
 		break;
 	}
 	old_facing = facing;
-//}
 
+//}
+	direction = facing ? 45 : 135;
+	rotation = direction;
 // ============ Ground Checking ============
 if (place_meeting(x, y + 1, obj_wall) and not in_phase) grounded = 4;
 else grounded--;
@@ -214,8 +216,8 @@ if (place_meeting(x,y, obj_double_jump)) {
 if (hookdown) {
 	if (instance_number(obj_grapplehook) == 0 && instance_number(obj_grapplepoint) == 0) {
 		proj = instance_create_layer(x, y, "instances", obj_grapplehook);
-		proj.direction = direction;
-		proj.image_angle = direction;
+		proj.direction = facing ? 45 : 135;
+		proj.image_angle = proj.direction;
 	}
 	audio_play_sound(sfx_shoot,0,0);
 }

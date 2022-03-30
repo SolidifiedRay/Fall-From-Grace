@@ -21,7 +21,7 @@ wall_jump_timer = 20;
 grounded = 0;
 //dashsp = 5.5;
 jumpsp = 4.7;
-wjumpvsp = 5;
+wjumpvsp = 4;
 wjumphsp = 8;
 
 wjumpinc = 0.1;
