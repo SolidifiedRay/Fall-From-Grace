@@ -110,6 +110,17 @@ if (in_phase) trailcolor = c_blue;
 vsp += grv;
 
 if (grounded > 0) {
+	if (hvec == 0 || hvec == -sign(hsp)) {
+		hsp -= sign(hsp) * walkdec;
+		if (abs(hsp) < walkinc) hsp = 0;
+	}
+	if (abs(hsp + hvec * walkinc) < walksp) {
+		hsp += hvec * walkinc;
+	}
+	if (abs(hsp) > walksp) {
+		hsp = sign(hsp) * walksp;
+	}
+/*
 	if (hvec == -1 && hsp + hvec * walkinc > hvec * walksp) {
 		hsp += hvec * walkinc;
 	} else if (hvec == 1 && hsp + hvec * walkinc < hvec * walksp) {
@@ -117,7 +128,19 @@ if (grounded > 0) {
 	} else {
 		hsp = abs(hsp) <= walkdec ? 0 : hsp - sign(hsp) * walkdec;
 	}
+	*/
 } else {
+	if (hvec == 0 || hvec == -sign(hsp)) {
+		hsp -= sign(hsp) * airdec;
+		if (abs(hsp) < airinc) hsp = 0;
+	}
+	if (abs(hsp + hvec * airinc) < airsp) {
+		hsp += hvec * airinc;
+	}
+	if (abs(hsp) > airsp) {
+		hsp = sign(hsp) * airsp;
+	}
+/*
 	if (hvec == -1 && hsp + hvec * airinc > hvec * airsp) {
 		hsp += hvec * airinc;
 	} else if (hvec == 1 && hsp + hvec * airinc < hvec * airsp) {
@@ -125,6 +148,7 @@ if (grounded > 0) {
 	} else {
 		hsp = abs(hsp) <= airdec ? 0 : hsp - sign(hsp) * airdec;
 	}
+	*/
 }
 
 
