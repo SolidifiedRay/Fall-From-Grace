@@ -147,8 +147,8 @@ in_wall_slide = (wall_slide_timer < 8);
 if ((grounded > 0) || (in_wall_slide)) && (jump) {
 	
 	if (in_wall_slide) {
-		hsp = -4.5 * wall_slide_dir;
-		vsp = -jumpsp * 1.15;
+		hsp = -wjumphsp * wall_slide_dir;
+		vsp = -wjumpvsp;
 		wall_jump_trail = 15;
 	}
 	else {

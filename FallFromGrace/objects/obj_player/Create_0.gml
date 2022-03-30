@@ -21,6 +21,8 @@ grounded = 0;
 
 //dashsp = 5.5;
 jumpsp = 4;
+wjumpvsp = 4.6;
+wjumphsp = 4.5;
 
 hookgrv = 0.65;
 hookready = true;
