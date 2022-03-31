@@ -1,5 +1,15 @@
 /// @desc
 
+// cheat
+if (room == TempLevel){
+	if keyboard_check(ord("9")){
+		x = 1411;
+		y = 85;
+	}
+}
+
+
+
 if (!dead) {
 
 // ============ Input Handling ============
