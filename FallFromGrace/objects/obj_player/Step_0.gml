@@ -121,16 +121,16 @@ if (in_phase) trailcolor = c_blue;
 vsp += grv;
 
 if (grounded > 0) {
-	if (hvec == 0 || hvec == -sign(hsp)) {
+	if (hvec == 0 || hvec == -sign(hsp) || abs(hsp) > walksp) {
 		hsp -= sign(hsp) * walkdec;
 		if (abs(hsp) < walkinc) hsp = 0;
 	}
 	if (abs(hsp + hvec * walkinc) < walksp) {
 		hsp += hvec * walkinc;
 	}
-	if (abs(hsp) > walksp) {
-		hsp = sign(hsp) * walksp;
-	}
+	// if (abs(hsp) > walksp) {
+	// 	hsp = sign(hsp) * walksp;
+	// }
 /*
 	if (hvec == -1 && hsp + hvec * walkinc > hvec * walksp) {
 		hsp += hvec * walkinc;
@@ -159,9 +159,9 @@ if (grounded > 0) {
 	if (abs(hsp + hvec * ainc) < airsp) {
 		hsp += hvec * ainc;
 	}
-	if (abs(hsp) > airsp) {
-		hsp = sign(hsp) * airsp;
-	}
+	//if (abs(hsp) > airsp) {
+	//	hsp = sign(hsp) * airsp;
+	//}
 /*
 	if (hvec == -1 && hsp + hvec * airinc > hvec * airsp) {
 		hsp += hvec * airinc;
@@ -334,9 +334,8 @@ y += vsp;
 //trail = instance_create_layer(x, y, "instances", obj_playertrail);
 //trail.image_blend = trailcolor;
 //trail.image_angle = point_direction(0,0,hsp,vsp);
-spd = point_distance(0,0,hsp,vsp);
-if (spd == 0) spd = 0.1;
-for(i = 0; i < 1; i += 1 / spd) {
+if (sp == 0) sp = 0.1;
+for(i = 0; i < 1; i += 1 / sp) {
 	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
 	trail.image_blend = trailcolor;
 }

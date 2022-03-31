@@ -22,7 +22,7 @@ grounded = 0;
 //dashsp = 5.5;
 jumpsp = 4.7;
 wjumpvsp = 4;
-wjumphsp = 8;
+wjumphsp = 6.1;
 
 wjumpinc = 0.1;
 wjumpdec = 0.1;
