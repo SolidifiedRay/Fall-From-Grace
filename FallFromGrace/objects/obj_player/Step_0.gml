@@ -144,10 +144,14 @@ if (grounded > 0) {
 	if (wall_jump_trail > 0) {
 		ainc = wjumpinc;
 		adec = wjumpdec;
+	} else if (instance_number(obj_grapplepoint) > 0) {
+		ainc = hookinc;
+		adec = hookdec;
 	} else {
 		ainc = airinc;
 		adec = airdec;
 	}
+
 	if (hvec == 0 || hvec == -sign(hsp)) {
 		hsp -= sign(hsp) * adec;
 		if (abs(hsp) < ainc) hsp = 0;

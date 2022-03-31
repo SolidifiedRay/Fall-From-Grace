@@ -27,7 +27,9 @@ wjumphsp = 8;
 wjumpinc = 0.1;
 wjumpdec = 0.1;
 
-hookgrv = 0.9;
+hookgrv = 1;
+hookinc = 0.3;
+hookdec = 0.1;
 hookready = true;
 
 in_phase = false;
