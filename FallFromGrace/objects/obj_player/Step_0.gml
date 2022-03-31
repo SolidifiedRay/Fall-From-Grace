@@ -238,6 +238,7 @@ if (hook) {
 		hsp += lengthdir_x(hookgrv, pointdir);
 		vsp += lengthdir_y(hookgrv, pointdir);
 		trailcolor = c_aqua;
+		if (in_phase) trailcolor = $ff8080;
 	}
 } else {
 	instance_destroy(obj_grapplehook);
