@@ -176,7 +176,7 @@ if (grounded > 0) {
 
 // handle wall sliding
 if (place_meeting(x + hsp, y, obj_wall)) && (!place_meeting(x, y + vsp, obj_wall)) {
-	if (vsp > 0) {
+	if (vsp > 0 && !in_phase) {
 	vsp *= 0.75;
 	}
 	wall_slide_timer = 0;
