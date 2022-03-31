@@ -27,7 +27,7 @@ hookdown = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("L"));
 //Phase Mode
 if (phase) {
 	in_phase = true;
-	grounded = 0;
+	grounded /= 2;
 } else {
 	if (not place_meeting(x,y, obj_wall)){
 		in_phase = false;
