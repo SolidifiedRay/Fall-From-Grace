@@ -23,7 +23,6 @@ if (phase) {
 		in_phase = false;
 	}
 }
-show_debug_message(can_double_jump);
 
 // conversion to numpad notation
 dir = 5;

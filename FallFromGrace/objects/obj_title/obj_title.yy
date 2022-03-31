@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_double_jump",
-    "path": "sprites/spr_double_jump/spr_double_jump.yy",
+    "name": "spr_title",
+    "path": "sprites/spr_title/spr_title.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "UI",
+    "path": "folders/Objects/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_double_jump",
+  "name": "obj_title",
   "tags": [],
   "resourceType": "GMObject",
 }

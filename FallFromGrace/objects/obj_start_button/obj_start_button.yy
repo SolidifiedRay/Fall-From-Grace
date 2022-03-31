@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_double_jump",
-    "path": "sprites/spr_double_jump/spr_double_jump.yy",
+    "name": "spr_start_button",
+    "path": "sprites/spr_start_button/spr_start_button.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,15 +20,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "UI",
+    "path": "folders/Objects/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_double_jump",
+  "name": "obj_start_button",
   "tags": [],
   "resourceType": "GMObject",
 }
