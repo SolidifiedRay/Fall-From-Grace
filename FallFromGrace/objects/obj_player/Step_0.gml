@@ -331,14 +331,14 @@ if (collision_line(x,y,x + hsp, y + vsp, obj_win,0,0) && !dead && !winning)
 x += hsp;
 y += vsp;
 
-//trail = instance_create_layer(x, y, "instances", obj_playertrail);
-//trail.image_blend = trailcolor;
+trail = instance_create_layer(x, y, "instances", obj_playertrail);
+trail.image_blend = trailcolor;
 //trail.image_angle = point_direction(0,0,hsp,vsp);
-if (sp == 0) sp = 0.1;
-for(i = 0; i < 1; i += 1 / sp) {
-	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
-	trail.image_blend = trailcolor;
-}
+//if (sp == 0) sp = 0.1;
+//for(i = 0; i < 1; i += 1 / sp) {
+//	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
+//	trail.image_blend = trailcolor;
+//}
 
 if (winning) {
 	firework = instance_create_layer(x+8*cos(alarm[0]), y-8*sin(alarm[0]),"instances",obj_poof);
