@@ -325,7 +325,25 @@ if (place_meeting(x + hsp, y + vsp, obj_wall) and not in_phase) {
 	vsp = 0;
 }
 
+// moving platform collision
+var _movingPlatform = instance_place(x, y + max(1, vsp), obj_moving_platform);
+if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_bottom && !in_phase) {
+	if (vsp > 0) {
+		while (!place_meeting(x, y + sign(vsp), obj_moving_platform)){
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
+	
+	// Add velocity
+	x += _movingPlatform.hsp;
+	y += _movingPlatform.vsp;
+}
 
+// Force the player to phase if the player is trapped in wall
+if (place_meeting(x, y, obj_wall)){
+	in_phase = true;
+}
 
 
 // kill the player
