@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":1,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":5,},
     {"id":{"name":"Room_Win","path":"rooms/Room_Win/Room_Win.yy",},"order":3,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
@@ -9,6 +10,7 @@
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"order":1,},
     {"id":{"name":"spr_grapplehook","path":"sprites/spr_grapplehook/spr_grapplehook.yy",},"order":2,},
     {"id":{"name":"obj_killBlock","path":"objects/obj_killBlock/obj_killBlock.yy",},"order":21,},
+    {"id":{"name":"obj_game_text","path":"objects/obj_game_text/obj_game_text.yy",},"order":22,},
     {"id":{"name":"spr_death","path":"sprites/spr_death/spr_death.yy",},"order":7,},
     {"id":{"name":"obj_grapplepoint","path":"objects/obj_grapplepoint/obj_grapplepoint.yy",},"order":3,},
     {"id":{"name":"Death2","path":"rooms/Death2/Death2.yy",},"order":1,},
@@ -21,7 +23,7 @@
     {"id":{"name":"GrappleTest","path":"rooms/GrappleTest/GrappleTest.yy",},"order":13,},
     {"id":{"name":"obj_playertrail","path":"objects/obj_playertrail/obj_playertrail.yy",},"order":4,},
     {"id":{"name":"spr_nograpple","path":"sprites/spr_nograpple/spr_nograpple.yy",},"order":4,},
-    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":15,},
+    {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},"order":14,},
     {"id":{"name":"obj_nograpple","path":"objects/obj_nograpple/obj_nograpple.yy",},"order":7,},
     {"id":{"name":"sfx_dink","path":"sounds/sfx_dink/sfx_dink.yy",},"order":4,},
     {"id":{"name":"spr_level1","path":"sprites/spr_level1/spr_level1.yy",},"order":2,},
@@ -41,7 +43,7 @@
     {"id":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},"order":11,},
     {"id":{"name":"sfx_dies","path":"sounds/sfx_dies/sfx_dies.yy",},"order":6,},
     {"id":{"name":"Start","path":"rooms/Start/Start.yy",},"order":10,},
-    {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},"order":18,},
+    {"id":{"name":"spr_killBlock","path":"sprites/spr_killBlock/spr_killBlock.yy",},"order":15,},
     {"id":{"name":"background_1","path":"sprites/background_1/background_1.yy",},"order":17,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
