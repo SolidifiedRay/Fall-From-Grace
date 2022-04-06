@@ -39,7 +39,7 @@ can_double_jump = false;
 //dash_length = 4;
 //num_dash_left = 1;
  
-dir = 5;
+
 hvec = 0;
 
 left = 0;
@@ -49,7 +49,7 @@ down = 0;
 jump = 0;
 //dash = 0;
 hook = 0;
-old_facing = 1;
+
 rotation = 0;
 trailcolor = c_white;
 facing = 1;
