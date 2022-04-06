@@ -314,6 +314,20 @@ if (place_meeting(x, y + vsp, obj_wall) and not in_phase) {
 }
 
 
+// diagonal collision
+// hopefully this will prevent players from being trapped in corners.
+if (place_meeting(x + hsp, y + vsp, obj_wall) and not in_phase) {
+	while (!place_meeting(x + sign(hsp), y + sign(vsp), obj_wall)) {
+		x += sign(hsp);
+		y += sign(vsp);
+	}
+	hsp = 0;
+	vsp = 0;
+}
+
+
+
+
 // kill the player
 if (collision_line(x,y,x + hsp, y + vsp, obj_kill,0,0) && !dead && !winning)
 {
