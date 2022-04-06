@@ -190,7 +190,8 @@ else {
 in_wall_slide = (wall_slide_timer < 8);
 
 // jump
-if ((grounded > 0) || (in_wall_slide)) && (jump) {
+
+if (!in_phase && ((grounded > 0) || (in_wall_slide)) && (jump)) {
 	
 	if (in_wall_slide) {
 		hsp = -wjumphsp * wall_slide_dir;
