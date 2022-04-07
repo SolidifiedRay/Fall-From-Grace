@@ -327,7 +327,7 @@ if (place_meeting(x + hsp, y + vsp, obj_wall) and not in_phase) {
 
 // moving platform collision
 var _movingPlatform = instance_place(x, y + max(1, vsp), obj_moving_platform);
-if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_bottom && !in_phase) {
+if (_movingPlatform && bbox_bottom <= _movingPlatform.bbox_top && !in_phase) {
 	if (vsp > 0) {
 		while (!place_meeting(x, y + sign(vsp), obj_moving_platform)){
 			y += sign(vsp);

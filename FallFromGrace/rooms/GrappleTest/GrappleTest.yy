@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":40.0,"y":296.0,"resourceVersion":"1.0","name":"inst_6208F744_1_1_4","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_double_jump","path":"objects/obj_double_jump/obj_double_jump.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":312.0,"y":112.0,"resourceVersion":"1.0","name":"inst_436A1EBB_1","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -199,7 +198,6 @@
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_6208F744_1_1_4","path":"rooms/GrappleTest/GrappleTest.yy",},
-    {"name":"inst_436A1EBB_1","path":"rooms/GrappleTest/GrappleTest.yy",},
     {"name":"inst_2BA35BEE","path":"rooms/GrappleTest/GrappleTest.yy",},
     {"name":"inst_2EFA5D23","path":"rooms/GrappleTest/GrappleTest.yy",},
     {"name":"inst_6A0661DB","path":"rooms/GrappleTest/GrappleTest.yy",},
