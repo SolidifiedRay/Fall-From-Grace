@@ -313,7 +313,7 @@ if (collision_line(x,y,x + hsp, y + vsp, obj_win,0,0) && !dead && !winning)
 x += hsp;
 y += vsp;
 
-
+/*
 if (in_phase) {
 	dir = random(360);
 	length = random(8);
@@ -328,13 +328,25 @@ if (in_phase) {
 trail = instance_create_layer(x, y, "instances", obj_playertrail);
 trail.image_blend = trailcolor;
 trail.depth = in_phase ? 350 : depth + 1;
-
+*/
 //trail.image_angle = point_direction(0,0,hsp,vsp);
-//if (sp == 0) sp = 0.1;
-//for(i = 0; i < 1; i += 1 / sp) {
-//	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
-//	trail.image_blend = trailcolor;
-//}
+if (sp <= 0) sp = 0.1;
+sp = 1; // comment this out for absurd trails
+for(i = 0; i < 1; i += 1 / sp) {
+	if (in_phase) {
+		dir = random(360);
+		length = random(8);
+		star = instance_create_layer(lerp(x-hsp,x,i) + lengthdir_x(length,dir),lerp(y-vsp,y,i)+lengthdir_y(length,dir), "instances", obj_star);
+		star.depth -= 10;
+		if (instance_number(obj_grapplepoint) > 0)	star.image_blend = trailcolor;
+		trailcolor = c_black;
+		if (irandom(2) == 0) star.image_blend = c_yellow;
+	}
+	
+	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
+	trail.image_blend = trailcolor;
+	trail.depth = in_phase ? 350 : depth + 1;	
+}
 
 if (winning) {
 	firework = instance_create_layer(x+8*cos(alarm[0]), y-8*sin(alarm[0]),"instances",obj_poof);
