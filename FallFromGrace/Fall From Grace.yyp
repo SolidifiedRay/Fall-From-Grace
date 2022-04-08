@@ -63,6 +63,7 @@
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},"order":18,},
     {"id":{"name":"obj_gamemanager","path":"objects/obj_gamemanager/obj_gamemanager.yy",},"order":12,},
     {"id":{"name":"TileSetNoGrapple","path":"tilesets/TileSetNoGrapple/TileSetNoGrapple.yy",},"order":3,},
+    {"id":{"name":"spr_blob","path":"sprites/spr_blob/spr_blob.yy",},"order":17,},
     {"id":{"name":"sprite_moving_platform","path":"sprites/sprite_moving_platform/sprite_moving_platform.yy",},"order":13,},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":13,},
     {"id":{"name":"spr_allkiller","path":"sprites/spr_allkiller/spr_allkiller.yy",},"order":10,},
@@ -79,6 +80,7 @@
     {"id":{"name":"obj_kill","path":"objects/obj_kill/obj_kill.yy",},"order":9,},
     {"id":{"name":"spr_double_jump","path":"sprites/spr_double_jump/spr_double_jump.yy",},"order":10,},
     {"id":{"name":"TutorialBackup","path":"rooms/TutorialBackup/TutorialBackup.yy",},"order":7,},
+    {"id":{"name":"obj_blob","path":"objects/obj_blob/obj_blob.yy",},"order":25,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":4,},
   ],
   "Options": [

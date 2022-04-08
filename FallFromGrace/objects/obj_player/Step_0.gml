@@ -321,6 +321,7 @@ if (in_phase) {
 	star.depth -= 10;
 	if (instance_number(obj_grapplepoint) > 0)	star.image_blend = trailcolor;
 	trailcolor = c_black;
+	if (irandom(2) == 0) star.image_blend = c_yellow;
 	
 }
 
