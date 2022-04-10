@@ -4,7 +4,7 @@
     "path": "sprites/spr_nograpple/spr_nograpple.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
