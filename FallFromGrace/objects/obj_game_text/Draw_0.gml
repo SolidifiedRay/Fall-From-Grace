@@ -14,3 +14,10 @@ if room == Level2 {
 	draw_text(100, 1050, "A [L]emur Swings");
 	draw_text(805, 1050, "A Kami Flies");
 }
+
+if room == Level3 {
+	draw_set_font(Font2);
+ 	draw_text(220, 220, "In an empty box agian,");
+ 	draw_text(290, 240, "eh Sinmer?");
+	draw_text(220, 50, "Clever. Wrong, but clever");
+}
