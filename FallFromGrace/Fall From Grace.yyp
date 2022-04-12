@@ -129,11 +129,11 @@
     {"roomId":{"name":"Room_Win","path":"rooms/Room_Win/Room_Win.yy",},},
     {"roomId":{"name":"TutorialBackup","path":"rooms/TutorialBackup/TutorialBackup.yy",},},
     {"roomId":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},},
-    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"TempLevel","path":"rooms/TempLevel/TempLevel.yy",},},
     {"roomId":{"name":"GrappleTest","path":"rooms/GrappleTest/GrappleTest.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

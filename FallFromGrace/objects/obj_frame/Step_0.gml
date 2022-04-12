@@ -21,4 +21,16 @@ if (container != noone) {
 	
 	x = clamp(obj_player.x, container.bbox_left, container.bbox_right);
 	y = clamp(obj_player.y, container.bbox_top, container.bbox_bottom);
+	if (bbox_left < container.bbox_left) {
+		xport = bbox_left;
+	}
+	if (bbox_right > container.bbox_right) {
+		xport = bbox_right - wport;
+	}
+	if (bbox_top < container.bbox_top) {
+		yport = bbox_top;
+	}
+	if (bbox_bottom > container.bbox_bottom) {
+		yport = bbox_bottom - hport;
+	}
 }
