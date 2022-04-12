@@ -1,2 +1,2 @@
 sprite = spr_level2;
-level = TempLevel;
+level = Level2;
