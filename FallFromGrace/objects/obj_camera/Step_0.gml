@@ -10,7 +10,7 @@ oldy = camera_get_view_y(view_camera[0]);
 oldh = camera_get_view_height(view_camera[0]);
 oldw = camera_get_view_width(view_camera[0]);
 
-frame = instance_position(x,y,obj_frame);
+frame = instance_position(obj_player.x,obj_player.y,obj_frame);
 if (frame != noone) {
 	viewx = frame.xport;
 	viewy = frame.yport;
