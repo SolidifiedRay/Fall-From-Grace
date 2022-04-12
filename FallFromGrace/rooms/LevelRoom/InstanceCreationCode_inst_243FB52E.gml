@@ -1,2 +1,2 @@
-sprite = spr_level2;
+sprite = spr_level3;
 level = Level3;
