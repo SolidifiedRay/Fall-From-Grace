@@ -8,8 +8,8 @@ if (room == Level3 && place_meeting(x, y, obj_checkpoint)) {
 }
 // respawn
 if (room == Level3 && LEVEL3_CHECKPOINT && respawn){
-	x = 1730;
-	y = 410;
+	x = obj_checkpoint.x;
+	y = obj_checkpoint.y;
 	respawn = false;
 }
 
