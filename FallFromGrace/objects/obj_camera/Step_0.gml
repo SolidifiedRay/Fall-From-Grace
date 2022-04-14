@@ -36,4 +36,26 @@ camera_set_view_pos(view_camera[0], newx, newy);
 camera_set_view_size(view_camera[0], lerpw, lerph);
 
 
+xrand = random_range(newx,newx+lerpw);
+yrand = random_range(newy,newy+lerpw);
+repeat(2) {
+	if (position_meeting(xrand,yrand,obj_killBlock)) {
+		switch irandom(1) {
+			case 0:
+				star = instance_create_layer(xrand,yrand,"instances",obj_star);
+				switch irandom(2) {
+					case 0: star.image_blend = c_aqua;
+					break;
+					case 1: star.image_blend = c_yellow;
+					break;
+					default: star.image_blend = c_white;
+					break;
+				}
+				break;
+			case 1:
+				star = instance_create_layer(xrand,yrand,"instances",obj_blob);
+				break;
+		}
+	}
+}
 

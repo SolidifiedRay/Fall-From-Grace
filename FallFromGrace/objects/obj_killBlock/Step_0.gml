@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/*
 xrand = random_range(bbox_left,bbox_right);
 yrand = random_range(bbox_bottom,bbox_top);
 if (point_distance(obj_player.x, obj_player.y, xrand, yrand) < 500) {
@@ -25,3 +26,4 @@ if (point_distance(obj_player.x, obj_player.y, xrand, yrand) < 500) {
 		timer--;
 	}
 }
+*/
