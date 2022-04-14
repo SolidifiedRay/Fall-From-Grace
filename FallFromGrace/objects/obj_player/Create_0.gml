@@ -62,3 +62,5 @@ totalframes = 0;
 frames = totalframes mod 60;
 seconds = (totalframes div 60) mod 60;
 minutes = seconds div 60;
+
+respawn = true;

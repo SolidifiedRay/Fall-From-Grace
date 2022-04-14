@@ -1,13 +1,11 @@
 /// @desc
 
-// cheat
-if (room == TempLevel){
-	if keyboard_check(ord("9")){
-		x = 1411;
-		y = 85;
-	}
+// respawn
+if (room == Level3 && LEVEL3_CHECKPOINT && respawn){
+	x = 1730;
+	y = 410;
+	respawn = false;
 }
-
 
 
 if (!dead) {

@@ -1,0 +1,2 @@
+globalvar LEVEL3_CHECKPOINT;
+LEVEL3_CHECKPOINT = false;

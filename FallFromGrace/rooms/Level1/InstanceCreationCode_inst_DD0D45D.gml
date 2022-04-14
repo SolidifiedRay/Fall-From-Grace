@@ -1,1 +1,1 @@
-next_level = TempLevel;
+next_level = Level2;

@@ -17,6 +17,13 @@ if room == Level2 {
 
 if room == Level3 {
 	draw_set_font(Font2);
+ 	draw_text(150, 960, "The only way is Through");
+ 	draw_text(1550, 1030, "Eat a God, esca[l]ate");
+	draw_text(1550, 1050, "Flee the World, e[l]evate");
+}
+
+if room == Level4 {
+	draw_set_font(Font2);
  	draw_text(220, 220, "In an empty box agian,");
  	draw_text(290, 240, "eh Sinmer?");
 	draw_text(220, 50, "Clever. Wrong, but clever");
