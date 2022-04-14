@@ -15,3 +15,6 @@ outline.x12 = bbox_left - w;
 outline.x22 = bbox_right + w;
 outline.y12 = bbox_top - w;
 outline.y22 = bbox_bottom + w;
+
+glitterspawn = (sprite_height * sprite_width) / 16384;
+timer = 0;
