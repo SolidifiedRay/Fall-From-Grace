@@ -9,6 +9,7 @@
     {"id":{"name":"sfx_jump","path":"sounds/sfx_jump/sfx_jump.yy",},"order":1,},
     {"id":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"order":24,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":1,},
+    {"id":{"name":"obj_phasekill_outline","path":"objects/obj_phasekill_outline/obj_phasekill_outline.yy",},"order":32,},
     {"id":{"name":"sfx_miss","path":"sounds/sfx_miss/sfx_miss.yy",},"order":5,},
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"order":1,},
     {"id":{"name":"Level4","path":"rooms/Level4/Level4.yy",},"order":15,},
