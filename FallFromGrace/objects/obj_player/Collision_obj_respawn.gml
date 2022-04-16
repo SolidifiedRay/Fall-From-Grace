@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-x = spawnx;
-y = spawny;
+spawnx = other.x;
+spawny = other.y - sprite_height;

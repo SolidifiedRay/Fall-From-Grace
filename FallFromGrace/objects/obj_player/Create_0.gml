@@ -31,7 +31,9 @@ hookgrv = 1;
 hookinc = 0.3;
 hookdec = 0.1;
 hookready = true;
+hooklen = 0;
 
+canphase = true;
 in_phase = false;
 can_double_jump = false;
 //in_dash = false;
@@ -64,3 +66,5 @@ seconds = (totalframes div 60) mod 60;
 minutes = seconds div 60;
 
 respawn = true;
+spawnx = x;
+spawny = y;
