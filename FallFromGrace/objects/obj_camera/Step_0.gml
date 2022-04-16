@@ -25,11 +25,11 @@ if (frame != noone) {
 	target = self;
 }
 
-if (instance_number(obj_death) > 0) {
-	viewx = obj_death.x - startw / 2;
-	viewy = obj_death.y - starth / 2;
-	vieww = startw;
-	viewh = starth;
+if (instance_number(obj_death) > 0 && obj_death.alarm[0] > 50) {
+	vieww *= 0.9;
+	viewh *= 0.9;
+	viewx = obj_death.x - vieww / 2;
+	viewy = obj_death.y - viewh / 2;
 }
 
 lerpw = lerp(oldw, vieww, camfactor);

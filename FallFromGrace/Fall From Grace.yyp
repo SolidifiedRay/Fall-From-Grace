@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"obj_spawnanim","path":"objects/obj_spawnanim/obj_spawnanim.yy",},"order":34,},
     {"id":{"name":"spr_level4","path":"sprites/spr_level4/spr_level4.yy",},"order":7,},
     {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":1,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":5,},
@@ -87,6 +88,7 @@
     {"id":{"name":"sprite_moving_platform","path":"sprites/sprite_moving_platform/sprite_moving_platform.yy",},"order":13,},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":13,},
     {"id":{"name":"spr_allkiller","path":"sprites/spr_allkiller/spr_allkiller.yy",},"order":10,},
+    {"id":{"name":"sfx_undies","path":"sounds/sfx_undies/sfx_undies.yy",},"order":7,},
     {"id":{"name":"obj_framecontainer","path":"objects/obj_framecontainer/obj_framecontainer.yy",},"order":2,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":0,},
     {"id":{"name":"obj_poof","path":"objects/obj_poof/obj_poof.yy",},"order":8,},

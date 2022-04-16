@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-instance_create_layer(x,y,"instances",obj_death);
+instance_destroy();
+audio_play_sound(sfx_undies,0,0);

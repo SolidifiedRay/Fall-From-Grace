@@ -306,8 +306,6 @@ if (!dead) {
 	|| (position_meeting(x, y, obj_killBlock) && in_phase && !dead && !winning)
 	|| (position_meeting(x, y, obj_spike) && !in_phase && !dead && !winning)
 	{
-		dead = true;
-		audio_play_sound(sfx_dies,0,0);
 		instance_create_layer(x,y,"instances",obj_death);
 	}
 

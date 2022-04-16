@@ -1,1 +1,1 @@
-camfactor = 0.05;
+camfactor = 0.075;
