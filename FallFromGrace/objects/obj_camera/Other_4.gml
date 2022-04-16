@@ -14,8 +14,8 @@ var _ypos = (_dheight / 2) - 768 / 2;
 window_set_rectangle(_xpos, _ypos, 1366, 768);
 surface_resize(application_surface, 1366, 768);
 
-startx = camera_get_view_x(view_camera[0]);
-starty = camera_get_view_y(view_camera[0]);
+// startx = camera_get_view_x(view_camera[0]);
+// starty = camera_get_view_y(view_camera[0]);
 starth = camera_get_view_height(view_camera[0]);
 startw = camera_get_view_width(view_camera[0]);
 

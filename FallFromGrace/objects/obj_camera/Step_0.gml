@@ -25,10 +25,17 @@ if (frame != noone) {
 	target = self;
 }
 
-lerpw = lerp(oldw, vieww, 0.075);
-lerph = lerp(oldh, viewh, 0.075);
-lerpx = lerp(oldx, viewx, 0.075);
-lerpy = lerp(oldy, viewy, 0.075);
+if (instance_number(obj_death) > 0) {
+	viewx = obj_death.x - startw / 2;
+	viewy = obj_death.y - starth / 2;
+	vieww = startw;
+	viewh = starth;
+}
+
+lerpw = lerp(oldw, vieww, camfactor);
+lerph = lerp(oldh, viewh, camfactor);
+lerpx = lerp(oldx, viewx, camfactor);
+lerpy = lerp(oldy, viewy, camfactor);
 newx = clamp(lerpx, 0, room_width - lerpw);
 newy = clamp(lerpy, 0, room_height - lerph);
 camera_set_view_target(view_camera[0],noone);

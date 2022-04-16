@@ -20,12 +20,12 @@ if (container != noone) {
 	}
 	
 	
-	
-	x = clamp(obj_player.x, container.bbox_left + sprite_width/2, container.bbox_right-sprite_width/2);
-	y = clamp(obj_player.y, container.bbox_top + sprite_height/2, container.bbox_bottom-sprite_height/2);
-	
-
-	if (container.loosefit) {
+	if (!container.loosefit) {
+		x = clamp(obj_player.x, container.bbox_left + sprite_width/2, container.bbox_right-sprite_width/2);
+		y = clamp(obj_player.y, container.bbox_top + sprite_height/2, container.bbox_bottom-sprite_height/2);
+		xport = clamp(xport, container.bbox_left, container.bbox_right - wport);
+		yport = clamp(yport, container.bbox_top, container.bbox_bottom - hport);
+	} else {
 		x = clamp(obj_player.x, container.bbox_left, container.bbox_right);
 		y = clamp(obj_player.y, container.bbox_top, container.bbox_bottom);
 		if (bbox_left < container.bbox_left) {
