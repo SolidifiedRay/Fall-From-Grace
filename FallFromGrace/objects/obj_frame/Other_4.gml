@@ -6,8 +6,6 @@ yport = bbox_top;
 hport = sprite_height;
 wport = sprite_width;
 
-container = noone;
-
 if (hport * 16 / 9 > wport) {
 	wport = hport * 16 / 9;
 	xport = x - wport / 2;
