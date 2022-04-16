@@ -24,6 +24,7 @@
     {"id":{"name":"obj_grapplepoint","path":"objects/obj_grapplepoint/obj_grapplepoint.yy",},"order":3,},
     {"id":{"name":"spr_unphasekiller","path":"sprites/spr_unphasekiller/spr_unphasekiller.yy",},"order":6,},
     {"id":{"name":"Death2","path":"rooms/Death2/Death2.yy",},"order":1,},
+    {"id":{"name":"spr_container","path":"sprites/spr_container/spr_container.yy",},"order":23,},
     {"id":{"name":"spr_phasekiller","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"order":4,},
     {"id":{"name":"spr_playertrail","path":"sprites/spr_playertrail/spr_playertrail.yy",},"order":3,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":0,},

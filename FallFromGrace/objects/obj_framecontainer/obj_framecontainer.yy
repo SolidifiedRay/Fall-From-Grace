@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_frame",
-    "path": "sprites/spr_frame/spr_frame.yy",
+    "name": "spr_container",
+    "path": "sprites/spr_container/spr_container.yy",
   },
   "solid": false,
   "visible": true,
