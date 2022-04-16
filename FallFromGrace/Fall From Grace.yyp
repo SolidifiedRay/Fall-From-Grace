@@ -92,7 +92,7 @@
     {"id":{"name":"sfx_shoot","path":"sounds/sfx_shoot/sfx_shoot.yy",},"order":2,},
     {"id":{"name":"Death1","path":"rooms/Death1/Death1.yy",},"order":0,},
     {"id":{"name":"obj_button_level","path":"objects/obj_button_level/obj_button_level.yy",},"order":3,},
-    {"id":{"name":"Sprite42","path":"sprites/Sprite42/Sprite42.yy",},"order":18,},
+    {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},"order":18,},
     {"id":{"name":"obj_platformpoint","path":"objects/obj_platformpoint/obj_platformpoint.yy",},"order":23,},
     {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},"order":16,},
     {"id":{"name":"TileSetScifi","path":"tilesets/TileSetScifi/TileSetScifi.yy",},"order":14,},

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite42",
-    "path": "sprites/Sprite42/Sprite42.yy",
+    "name": "spr_checkpoint",
+    "path": "sprites/spr_checkpoint/spr_checkpoint.yy",
   },
   "solid": false,
   "visible": false,
