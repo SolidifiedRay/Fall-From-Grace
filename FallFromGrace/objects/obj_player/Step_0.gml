@@ -27,6 +27,9 @@ if (!dead) {
 	phase = canphase && (keyboard_check(vk_shift) || keyboard_check(ord("J")));
 	hook = keyboard_check(ord("Z")) || keyboard_check(ord("L"));
 	hookdown = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("L"));
+	
+	noclip = keyboard_check(ord("T"));
+	phase = phase || noclip;
 
 	//Phase Mode
 	if (phase) {
@@ -43,6 +46,14 @@ if (!dead) {
 	if (hvec == -1) facing = -1;
 	if (hvec == 1) facing = 1;
 	rotation = facing ? 45 : 135;
+
+	// NOCLIP MODE (FOR DEBUGGING ONLY)
+	if (noclip) {
+		hsp = 0;
+		vsp = 0;
+		x += 16 * hvec;
+		y += 16 * vvec;
+	}
 
 	// ============ Ground Checking ============
 	if (place_meeting(x, y + 1, obj_wall) and not in_phase) grounded = 4;
