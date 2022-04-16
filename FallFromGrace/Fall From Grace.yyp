@@ -16,6 +16,7 @@
     {"id":{"name":"spr_tilesetgrapple","path":"sprites/spr_tilesetgrapple/spr_tilesetgrapple.yy",},"order":12,},
     {"id":{"name":"spr_grapplehook","path":"sprites/spr_grapplehook/spr_grapplehook.yy",},"order":2,},
     {"id":{"name":"obj_killBlock","path":"objects/obj_killBlock/obj_killBlock.yy",},"order":21,},
+    {"id":{"name":"World0","path":"rooms/World0/World0.yy",},"order":17,},
     {"id":{"name":"spr_star","path":"sprites/spr_star/spr_star.yy",},"order":16,},
     {"id":{"name":"TileSetAllKiller","path":"tilesets/TileSetAllKiller/TileSetAllKiller.yy",},"order":9,},
     {"id":{"name":"obj_game_text","path":"objects/obj_game_text/obj_game_text.yy",},"order":22,},
@@ -49,6 +50,7 @@
     {"id":{"name":"obj_win","path":"objects/obj_win/obj_win.yy",},"order":11,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
+    {"id":{"name":"spr_teleport","path":"sprites/spr_teleport/spr_teleport.yy",},"order":19,},
     {"id":{"name":"obj_double_jump","path":"objects/obj_double_jump/obj_double_jump.yy",},"order":14,},
     {"id":{"name":"obj_moving_platform","path":"objects/obj_moving_platform/obj_moving_platform.yy",},"order":19,},
     {"id":{"name":"Death3","path":"rooms/Death3/Death3.yy",},"order":2,},
@@ -124,6 +126,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"World0","path":"rooms/World0/World0.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

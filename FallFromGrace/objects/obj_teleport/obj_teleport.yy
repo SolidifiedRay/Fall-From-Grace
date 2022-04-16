@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_nograpple",
-    "path": "sprites/spr_nograpple/spr_nograpple.yy",
+    "name": "spr_teleport",
+    "path": "sprites/spr_teleport/spr_teleport.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

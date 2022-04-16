@@ -5,6 +5,7 @@
 draw_set_alpha(1);
 if (!dead) {
 draw_set_colour(c_black);
+if (in_phase) draw_set_colour(c_white);
 
 draw_circle(x,y,7,false);
 if (instance_number(obj_grapplepoint) > 0) {
@@ -18,7 +19,7 @@ if (instance_number(obj_grapplehook) > 0) {
 }
 
 draw_set_colour(c_black);
-
+if (in_phase) draw_set_colour(c_white);
 if (instance_number(obj_grapplepoint) > 0) {
 	draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),8);
 
@@ -27,10 +28,12 @@ if (instance_number(obj_grapplepoint) > 0) {
 
 } else {
 	draw_set_colour(c_black);
+	if (in_phase) draw_set_colour(c_white);
 	draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),2);
 	draw_set_colour($3e4fb4);
 	draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),1);
 	draw_set_colour(c_black);
+	if (in_phase) draw_set_colour(c_white);
 	draw_line_width(x,y,x+lengthdir_x(8,rotation),y+lengthdir_y(8,rotation),8);
 
 

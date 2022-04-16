@@ -355,7 +355,7 @@ for(i = 0; i < 1; i += 1 / sp) {
 	
 	trail = instance_create_layer(lerp(x-hsp,x,i),lerp(y-vsp,y,i), "instances", obj_playertrail);
 	trail.image_blend = trailcolor;
-	trail.depth = in_phase ? 350 : depth + 1;	
+	trail.depth = in_phase ? 250: depth + 1;	
 }
 
 if (winning) {
