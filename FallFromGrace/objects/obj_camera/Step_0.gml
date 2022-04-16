@@ -25,13 +25,17 @@ if (frame != noone) {
 	target = self;
 }
 
-if (instance_number(obj_death) > 0 && obj_death.alarm[0] > 30) {
+if (instance_number(obj_death) > 0) {
 	viewright = viewx + vieww;
 	viewbot = viewy + viewh;
 	vieww *= 0.75;
 	viewh *= 0.75;
 	deadx = obj_death.x - vieww / 2;
 	deady = obj_death.y - viewh / 2;
+	if (obj_death.alarm[0] < 30) {
+		deadx = obj_player.spawnx;
+		deady = obj_player.spawny;
+	}
 	viewx = clamp(deadx, viewx, viewright - vieww);
 	viewy = clamp(deady, viewy, viewbot - viewh);
 }
