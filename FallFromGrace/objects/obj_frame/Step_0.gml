@@ -27,7 +27,7 @@ if (container != noone) {
 	}
 	
 	
-	if (!container.loosefit) {
+	if (!container.loosefill) {
 		x = clamp(targetx, container.bbox_left + sprite_width/2, container.bbox_right-sprite_width/2);
 		y = clamp(targety, container.bbox_top + sprite_height/2, container.bbox_bottom-sprite_height/2);
 		xport = clamp(xport, container.bbox_left, container.bbox_right - wport);

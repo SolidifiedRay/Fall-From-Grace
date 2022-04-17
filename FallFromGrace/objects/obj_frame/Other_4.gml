@@ -13,12 +13,3 @@ if (hport * 16 / 9 > wport) {
 	hport = wport * 9 / 16;
 	yport = y - hport / 2;
 }
-
-show_debug_message(string(xport));
-show_debug_message(string(yport));
-show_debug_message(string(wport));
-show_debug_message(string(hport));
-show_debug_message(string(16/9));
-show_debug_message(string(wport / hport));
-
-
