@@ -23,6 +23,7 @@ if (!dead) {
 	up = keyboard_check(vk_up) || keyboard_check(ord("W"));
 	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 	jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("K"));
+	jumprelease = keyboard_check_released(vk_space) || keyboard_check_released(ord("K"));
 	//dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("J"));
 	phase = canphase && (keyboard_check(vk_shift) || keyboard_check(ord("J")));
 	hook = keyboard_check(ord("Z")) || keyboard_check(ord("L"));
@@ -207,43 +208,9 @@ if (!dead) {
 		instance_destroy(obj_grapplepoint);
 	}
 
-
-
-
-	// dash
-	/*
-	if (dash && num_dash_left) {
-		in_dash = true;
-		num_dash_left = 0;
-		grounded = 0;
-		dash_timer = dash_length;
-		hsp = lengthdir_x(dashsp, direction);
-		vsp = lengthdir_y(dashsp, direction);
-		show_debug_message(dashsp)
-		old_facing = facing;
-		audio_play_sound(sfx_dash,0,0);
+	if (instance_number(obj_grapplepoint) <= 0 && jumprelease && vsp < 0) {
+		vsp /= 2;
 	}
-
-	if (in_dash) && (dash_timer > 0) {
-		trailcolor = c_red;
-		facing = 1;
-		rotation = direction;
-		hsp = lengthdir_x(dashsp, direction);
-		vsp = lengthdir_y(dashsp, direction);
-		dash_timer -= 1;
-		if (dash_timer == 0) {
-			in_dash = false;
-			facing = old_facing;
-			rotation = 0;
-			hsp = lengthdir_x(dashsp, direction);
-			vsp = lengthdir_y(dashsp, direction);
-		}
-	}
-
-	if (grounded > 0) { // replenish dash num
-		num_dash_left = 1;
-	}
-	*/
 
 	// normalize speed
 	sp = point_distance(0, 0, hsp, vsp);
@@ -252,7 +219,6 @@ if (!dead) {
 		hsp *= scale;
 		vsp *= scale;
 	}
-
 
 	// moving platform collision
 	var _movingPlatform = instance_place(x, y + max(1, vsp), obj_moving_platform);
