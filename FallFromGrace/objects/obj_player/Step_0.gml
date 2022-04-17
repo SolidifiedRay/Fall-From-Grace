@@ -182,11 +182,13 @@ if (!dead) {
 		aimy = y;
 		aimtrue = false;
 		
+		gaps = 8;
+		
 		if (!position_meeting(x, y, obj_wall)) {
 			while (!position_meeting(aimx, aimy, obj_wall)
 					&& !(aimx < 0 || aimy < 0 || aimx > room_width || aimy > room_height)) {
-				aimy-= 8;
-				aimx += 8 * facing;
+				aimy-= gaps;
+				aimx += gaps * facing;
 			}
 			while (position_meeting(aimx, aimy, obj_wall)) {
 				aimy++;
