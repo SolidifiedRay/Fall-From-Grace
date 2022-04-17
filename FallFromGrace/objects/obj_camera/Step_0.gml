@@ -51,9 +51,10 @@ camera_set_view_pos(view_camera[0], newx, newy);
 camera_set_view_size(view_camera[0], lerpw, lerph);
 
 
-xrand = random_range(newx,newx+lerpw);
-yrand = random_range(newy,newy+lerpw);
-repeat(2) {
+
+repeat(15) {
+	xrand = random_range(newx,newx+lerpw);
+	yrand = random_range(newy,newy+lerpw);
 	if (position_meeting(xrand,yrand,obj_killBlock)) {
 		switch irandom(1) {
 			case 0:
