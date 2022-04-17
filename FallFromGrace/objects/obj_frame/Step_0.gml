@@ -30,7 +30,6 @@ if (container != noone) {
 		y = clamp(targety, container.bbox_top + vborder, container.bbox_bottom-vborder);
 		xport = clamp(xport, container.bbox_left, container.bbox_right - wport);
 		yport = clamp(yport, container.bbox_top, container.bbox_bottom - hport);
-		show_debug_message("STRICT");
 	} else {
 		x = clamp(targetx, container.bbox_left, container.bbox_right);
 		y = clamp(targety, container.bbox_top, container.bbox_bottom);

@@ -3,6 +3,32 @@
 
 // draw_sprite_ext( sprite_index, image_index, x, y, image_xscale, image_yscale, rotation, image_blend, image_alpha);
 draw_set_alpha(1);
+
+draw_primitive_begin(pr_trianglestrip);
+for (i = 0; i < tlen; i++) {
+	tcnow = (i + 1 + tcounter + tlen) mod tlen;
+	tclast = (tcnow - 1 + tlen) mod tlen;
+	show_debug_message(tcnow);
+	tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
+	tthick = 7;
+	twid = tthick * (i - 1) / tlen;
+	x1 = tx[tcnow];
+	y1 = ty[tcnow];
+	//x2 = tx[tclast];
+	//y2 = ty[tclast];
+	
+	x11 = x1+lengthdir_x(twid,tdir+90);
+	x12 = x1-lengthdir_x(twid,tdir+90);
+	y11 = y1+lengthdir_y(twid,tdir+90);
+	y12 = y1-lengthdir_y(twid,tdir+90);
+	
+	twid = tthick * i / tlen;
+	
+	draw_vertex_colour(x11, y11,tcolor[tcnow],talpha[tcnow]);
+	draw_vertex_colour(x12, y12,tcolor[tcnow],talpha[tcnow]);
+
+}
+draw_primitive_end();
 if (!dead) {
 	draw_set_colour(c_black);
 	if (in_phase) draw_set_colour(c_white);

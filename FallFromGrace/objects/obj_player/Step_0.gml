@@ -357,6 +357,7 @@ if (!dead) {
 	trail.depth = in_phase ? 350 : depth + 1;
 	*/
 	//trail.image_angle = point_direction(0,0,hsp,vsp);
+	/*
 	if (sp <= 0) sp = 0.1;
 	sp = 1; // comment this out for absurd trails
 	for (i = 0; i < 1; i += 1 / sp) {
@@ -374,13 +375,35 @@ if (!dead) {
 		trail.image_blend = trailcolor;
 		trail.depth = in_phase ? 250 : depth + 1;
 	}
-
+	*/
+	if (in_phase) {
+		dir = random(360);
+		length = random(8);
+		star = instance_create_layer(x+lengthdir_x(length, dir), y+lengthdir_y(length, dir), "instances", obj_star);
+		star.depth -= 10;
+		if (instance_number(obj_grapplepoint) > 0)	star.image_blend = trailcolor;
+		trailcolor = c_black;
+		trailalpha = 0.8 ;
+		if (irandom(2) == 0) star.image_blend = c_yellow;
+	} else {
+		trailalpha = 1;
+	}
 
 // =========================================
 } else {
 	x = spawnx;
 	y = spawny;
+	trailalpha = 0;
+	talpha[tcounter]=0;
 }
+
+tcounter++;
+tcounter = tcounter mod tlen;
+	
+tx[tcounter] = x;
+ty[tcounter] = y;
+tcolor[tcounter] = trailcolor;
+talpha[tcounter] = trailalpha;
 
 if (winning) {
 	firework = instance_create_layer(x + 8 * cos(alarm[0]), y - 8 * sin(alarm[0]), "instances", obj_poof);

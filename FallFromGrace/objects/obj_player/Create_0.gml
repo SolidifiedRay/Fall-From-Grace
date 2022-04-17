@@ -74,3 +74,10 @@ aimy = y;
 aimtrue = false;
 
 circlehook = false;
+
+tlen = 120;
+tcounter = 0;
+tx = array_create(tlen, x);
+ty = array_create(tlen, y);
+tcolor = array_create(tlen, c_white);
+talpha = array_create(tlen, 1);
