@@ -181,11 +181,18 @@ if (!dead) {
 		aimx = x;
 		aimy = y;
 		aimtrue = false;
-		while (!position_meeting(aimx, aimy, obj_wall)
-				&& !(aimx < 0 || aimy < 0 || aimx > room_width || aimy > room_height)) {
-			// show_debug_message(string(aimx) + "|" + string(aimy))
-			aimy--;
-			aimx += facing;
+		
+		if (!position_meeting(x, y, obj_wall)) {
+			while (!position_meeting(aimx, aimy, obj_wall)
+					&& !(aimx < 0 || aimy < 0 || aimx > room_width || aimy > room_height)) {
+				aimy-= 8;
+				aimx += 8 * facing;
+			}
+			while (position_meeting(aimx, aimy, obj_wall)) {
+				aimy++;
+				aimx-=facing;
+			}
+		
 		}
 		if (instance_place(aimx, aimy, obj_wall) != noone) {
 			if (instance_place(aimx, aimy, obj_wall).object_index = obj_wall) {
