@@ -214,6 +214,7 @@ if (!dead) {
 			instance_create_layer(aimx, aimy, "instances", obj_grapplepoint);
 		} else {
 			audio_play_sound(sfx_dink, 0, 0);
+			 instance_create_layer(aimx,aimy,"instances",obj_poof);
 		}
 		audio_play_sound(sfx_shoot, 0, 0);
 	}

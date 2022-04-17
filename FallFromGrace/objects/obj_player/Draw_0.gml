@@ -38,25 +38,45 @@ if (!dead) {
 		draw_set_colour(c_black);
 		if (in_phase) draw_set_colour(c_white);
 		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),2);
-		draw_set_colour($3e4fb4);
+		draw_set_colour($3e4ffb4);
 		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),1);
 		*/
 		
-		aimlength = clamp(64,0, point_distance(x,y,aimx,aimy) / 2);
+		//aimlength = clamp(64,0, point_distance(x,y,aimx,aimy) / 2);
+		
+		thinness = 2;
+		thickness = 3;
+		
+		aimlength = point_distance(x,y,aimx,aimy) / 4;
 		draw_set_colour(c_black);
 		if (in_phase) draw_set_colour(c_white);
-		draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),2);
+		draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),thickness);
+		draw_line_width(x,y,x+lengthdir_x(aimlength,rotation),y+lengthdir_y(aimlength,rotation),thickness);
+		aimlength--;
 		//draw_set_colour($3e4fb4);
 		if (aimtrue) draw_set_colour(c_aqua) else draw_set_colour(c_red);
-		draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),1);
+		draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),thinness);
+		draw_line_width(x,y,x+lengthdir_x(aimlength,rotation),y+lengthdir_y(aimlength,rotation),thinness);
+		
+		if (aimtrue) {
+			midx = (x+aimx)/2;
+			midy = (y+aimy)/2;
+			aimlength/=2;
+			draw_set_colour(c_black);
+			if (in_phase) draw_set_colour(c_white);
+			draw_line_width(midx,midy,midx-lengthdir_x(aimlength,rotation),midy-lengthdir_y(aimlength,rotation),thickness);
+			draw_line_width(midx,midy,midx+lengthdir_x(aimlength,rotation),midy+lengthdir_y(aimlength,rotation),thickness);
+			draw_set_colour(c_aqua);
+			aimlength--;
+			draw_line_width(midx,midy,midx-lengthdir_x(aimlength,rotation),midy-lengthdir_y(aimlength,rotation),thinness);
+			draw_line_width(midx,midy,midx+lengthdir_x(aimlength,rotation),midy+lengthdir_y(aimlength,rotation),thinness);
+
+		}
 		
 		draw_set_colour(c_black);
 		if (in_phase) draw_set_colour(c_white);
 		draw_line_width(x,y,x+lengthdir_x(8,rotation),y+lengthdir_y(8,rotation),8);
 	}
-
-
-
 
 	draw_set_colour(trailcolor);
 	draw_circle(x,y,5,false);
