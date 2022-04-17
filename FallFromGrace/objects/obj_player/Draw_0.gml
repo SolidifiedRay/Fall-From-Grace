@@ -10,25 +10,31 @@ for (i = 0; i < tlen; i++) {
 	tclast = (tcnow - 1 + tlen) mod tlen;
 	show_debug_message(tcnow);
 	tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
-	tthick = 7;
-	twid = tthick * (i - 1) / tlen;
+	twid = 7;
+	twid *= i / tlen;
+	
+	alpha1 = talpha[tcnow];
+	// alpha1 *= i / tlen;
+	
+	color1 = tcolor[tcnow];
 	x1 = tx[tcnow];
 	y1 = ty[tcnow];
-	//x2 = tx[tclast];
-	//y2 = ty[tclast];
 	
 	x11 = x1+lengthdir_x(twid,tdir+90);
-	x12 = x1-lengthdir_x(twid,tdir+90);
 	y11 = y1+lengthdir_y(twid,tdir+90);
-	y12 = y1-lengthdir_y(twid,tdir+90);
+	x12 = x1+lengthdir_x(twid,tdir-90);
+	y12 = y1+lengthdir_y(twid,tdir-90);
 	
-	twid = tthick * i / tlen;
-	
-	draw_vertex_colour(x11, y11,tcolor[tcnow],talpha[tcnow]);
-	draw_vertex_colour(x12, y12,tcolor[tcnow],talpha[tcnow]);
+
+	draw_vertex_colour(x11, y11,color1,alpha1);
+	draw_vertex_colour(x12, y12,color1,alpha1);
+		
+	//draw_circle(x11,y11,2,1);
+	//draw_circle(x12,y12,2,1);
 
 }
 draw_primitive_end();
+
 if (!dead) {
 	draw_set_colour(c_black);
 	if (in_phase) draw_set_colour(c_white);
