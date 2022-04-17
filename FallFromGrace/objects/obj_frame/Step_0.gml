@@ -4,8 +4,8 @@
 if (container != noone) {
 	xport = bbox_left;
 	yport = bbox_top;
-	hport = container.sprite_height;
-	wport = container.sprite_width;
+	hport = container.bbox_bottom - container.bbox_top;
+	wport = container.bbox_right - container.bbox_left;
 	target = obj_player;
 	targetx = target.x;
 	targety = target.y;
@@ -15,12 +15,10 @@ if (container != noone) {
 	}
 	
 	if (hport * 16 / 9 < wport) {
-		hport = container.sprite_height;
 		yport = container.bbox_top;
 		wport = hport * 16 / 9;
 		xport = targetx - wport / 2;
 	} else {
-		wport = container.sprite_width;
 		xport = container.bbox_left;
 		hport = wport * 9 / 16;
 		yport = targety - hport / 2;
@@ -28,10 +26,11 @@ if (container != noone) {
 	
 	
 	if (!container.loosefill) {
-		x = clamp(targetx, container.bbox_left + sprite_width/2, container.bbox_right-sprite_width/2);
-		y = clamp(targety, container.bbox_top + sprite_height/2, container.bbox_bottom-sprite_height/2);
+		x = clamp(targetx, container.bbox_left + hborder, container.bbox_right-hborder);
+		y = clamp(targety, container.bbox_top + vborder, container.bbox_bottom-vborder);
 		xport = clamp(xport, container.bbox_left, container.bbox_right - wport);
 		yport = clamp(yport, container.bbox_top, container.bbox_bottom - hport);
+		show_debug_message("STRICT");
 	} else {
 		x = clamp(targetx, container.bbox_left, container.bbox_right);
 		y = clamp(targety, container.bbox_top, container.bbox_bottom);
