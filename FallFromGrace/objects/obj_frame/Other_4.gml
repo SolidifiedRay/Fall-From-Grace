@@ -13,3 +13,7 @@ if (hport * 16 / 9 > wport) {
 	hport = wport * 9 / 16;
 	yport = y - hport / 2;
 }
+
+if (container != noone) {
+	container.loosefill = true;
+}
