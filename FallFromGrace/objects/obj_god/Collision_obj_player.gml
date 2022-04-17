@@ -26,6 +26,7 @@ switch irandom(1) {
 
 
 star.direction = point_direction(star.x, star.y, obj_player.x, obj_player.y);
-star.speed = random(8);
+// star.speed = point_distance(star.x, star.y, obj_player.x, obj_player.y) / 32;
+star.speed = 1 + random(1);
 star.image_xscale = random_range(1, 3);
 star.image_yscale = star.image_xscale;
