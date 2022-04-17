@@ -21,6 +21,7 @@ if (frame != noone) {
 	vieww = frame.wport;
 	target = frame;
 	
+	/*
 	if (framecontainer != container) {
 		viewx = x - startw / 2;
 		viewy = y - starth / 2;
@@ -28,6 +29,7 @@ if (frame != noone) {
 		viewh = starth;
 		target = self;
 	}
+	*/
 } else {
 	viewx = x - startw / 2;
 	viewy = y - starth / 2;
