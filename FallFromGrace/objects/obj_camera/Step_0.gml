@@ -25,7 +25,7 @@ if (frame != noone) {
 	target = self;
 }
 
-if (instance_number(obj_death) > 0) {
+if (instance_number(obj_death) > 0 && alarm[0] > 30) {
 	viewright = viewx + vieww;
 	viewbot = viewy + viewh;
 	vieww *= 0.75;
@@ -33,11 +33,13 @@ if (instance_number(obj_death) > 0) {
 	deadx = obj_death.x - vieww / 2;
 	deady = obj_death.y - viewh / 2;
 	if (obj_death.alarm[0] < 30) {
-		deadx = obj_player.spawnx;
-		deady = obj_player.spawny;
+		deadx = obj_player.spawnx - vieww / 2;
+		deady = obj_player.spawny - viewh / 2;
 	}
-	viewx = clamp(deadx, viewx, viewright - vieww);
-	viewy = clamp(deady, viewy, viewbot - viewh);
+	//viewx = clamp(deadx, viewx, viewright - vieww);
+	//viewy = clamp(deady, viewy, viewbot - viewh);
+	viewy = deady;
+	viewx = deadx;
 }
 
 lerpw = lerp(oldw, vieww, camfactor);
