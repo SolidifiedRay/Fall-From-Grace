@@ -178,15 +178,42 @@ if (!dead) {
 
 
 	// grapple
+
+
+	if (instance_number(obj_grapplepoint) <= 0) {
+		aimx = x;
+		aimy = y;
+		aimtrue = false;
+		while (!position_meeting(aimx, aimy, obj_wall)
+		&& !(aimx < 0 || aimy < 0 || aimx > room_width || aimy > room_height))
+		{
+			// show_debug_message(string(aimx) + "|" + string(aimy))
+			aimy--;
+			aimx+= facing;
+		}
+		if (instance_place(aimx,aimy,obj_wall) != noone) {
+			if (instance_place(aimx,aimy,obj_wall).object_index = obj_wall) {
+				aimtrue = true;
+			}
+		}
+	}
+	aimsprite = aimtrue ? spr_aimtrue : spr_aimfalse;
+	
 	if (hookdown) {
+		/*
 		if (instance_number(obj_grapplehook) == 0 && instance_number(obj_grapplepoint) == 0) {
 			proj = instance_create_layer(x, y, "instances", obj_grapplehook);
 			proj.direction = facing ? 45 : 135;
 			proj.image_angle = proj.direction;
 		}
+		*/
+		if (aimtrue) {
+			instance_create_layer(aimx, aimy, "instances", obj_grapplepoint);
+		} else {
+			audio_play_sound(sfx_dink,0,0);
+		}
 		audio_play_sound(sfx_shoot,0,0);
 	}
-
 
 	if (hook) {
 		if (instance_number(obj_grapplepoint) > 0) {
@@ -330,7 +357,6 @@ if (!dead) {
 		trail.image_blend = trailcolor;
 		trail.depth = in_phase ? 250: depth + 1;	
 	}
-
 
 
 // =========================================

@@ -68,3 +68,7 @@ minutes = seconds div 60;
 respawn = true;
 spawnx = x;
 spawny = y;
+
+aimx = x;
+aimy = y;
+aimtrue = false;
