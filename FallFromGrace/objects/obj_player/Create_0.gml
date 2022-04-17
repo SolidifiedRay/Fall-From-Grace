@@ -19,7 +19,7 @@ wall_jump_trail = 0;
 wall_jump_timer = 20;
 
 grounded = 0;
-//dashsp = 5.5;
+
 jumpsp = 4.7;
 wjumpvsp = 4;
 wjumphsp = 6.1;
@@ -49,7 +49,7 @@ right = 0;
 up = 0;
 down = 0;
 jump = 0;
-//dash = 0;
+
 hook = 0;
 
 rotation = 0;
@@ -73,4 +73,4 @@ aimx = x;
 aimy = y;
 aimtrue = false;
 
-circlehook = true;
+circlehook = false;

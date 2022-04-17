@@ -88,7 +88,10 @@ if (!dead) {
 		color2 = c_white;
 		
 		// draw_circle(aimx,aimy,point_distance(x,y,aimx,aimy)/2,1);
+		draw_set_alpha(0.3);
+		draw_set_colour(c_white);
 		draw_circle(aimx,aimy,hooklen,1);
+		draw_set_alpha(1);
 		
 	} else {
 		color1 = c_red;
