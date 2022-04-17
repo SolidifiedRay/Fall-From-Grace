@@ -7,13 +7,7 @@ if (!dead) {
 	draw_set_colour(c_black);
 	if (in_phase) draw_set_colour(c_white);
 
-
-
 	draw_circle(x,y,7,false);
-	if(hookdown) {
-		draw_set_colour(c_lime);
-		draw_line_width(x,y,aimx,aimy,3);
-	}
 	
 	if (instance_number(obj_grapplepoint) > 0) {
 		draw_set_colour(c_aqua);
@@ -70,7 +64,12 @@ if (!dead) {
 			aimlength--;
 			draw_line_width(midx,midy,midx-lengthdir_x(aimlength,rotation),midy-lengthdir_y(aimlength,rotation),thinness);
 			draw_line_width(midx,midy,midx+lengthdir_x(aimlength,rotation),midy+lengthdir_y(aimlength,rotation),thinness);
-
+		}
+		
+			
+		if(hookdown) {
+			draw_set_colour(c_lime);
+			draw_line_width(x,y,aimx,aimy,3);
 		}
 		
 		draw_set_colour(c_black);
@@ -80,6 +79,26 @@ if (!dead) {
 
 	draw_set_colour(trailcolor);
 	draw_circle(x,y,5,false);
+
+
 	
-	draw_sprite(aimsprite,0,aimx,aimy);
+	//draw_sprite(aimsprite,0,aimx,aimy);
+	if (aimtrue) {
+		color1 = c_aqua;
+		color2 = c_white;
+		
+		// draw_circle(aimx,aimy,point_distance(x,y,aimx,aimy)/2,1);
+		draw_circle(aimx,aimy,hooklen,1);
+		
+	} else {
+		color1 = c_red;
+		color2 = c_black;
+	}
+	draw_set_colour(color1);
+	draw_circle(aimx,aimy,4,0);
+	draw_set_colour(color2);
+	draw_circle(aimx,aimy,3,0);
+	draw_set_colour(color1);
+	draw_circle(aimx,aimy,2,0);
+
 }

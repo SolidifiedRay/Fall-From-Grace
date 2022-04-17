@@ -200,7 +200,7 @@ if (!dead) {
 			}
 		}
 	}
-	aimsprite = aimtrue ? spr_aimtrue : spr_aimfalse;
+	// aimsprite = aimtrue ? spr_aimtrue : spr_aimfalse;
 
 	if (hookdown) {
 		/*
@@ -223,11 +223,25 @@ if (!dead) {
 		if (instance_number(obj_grapplepoint) > 0) {
 			pointdir = point_direction(x, y, obj_grapplepoint.x, obj_grapplepoint.y);
 			_hookgrv = hookgrv;
-			//if (point_distance(x,y,obj_grapplepoint.x,obj_grapplepoint.y) > hooklen) {
-			//x = obj_grapplepoint.x - lengthdir_x(hooklen, pointdir);
-			//y = obj_grapplepoint.y - lengthdir_y(hooklen, pointdir);
-			//_hookgrv *= 1.1;
-			//}
+			
+			if (circlehook) {
+				if (point_distance(x,y,obj_grapplepoint.x,obj_grapplepoint.y) > hooklen) {
+					x = obj_grapplepoint.x - lengthdir_x(hooklen, pointdir);
+					y = obj_grapplepoint.y - lengthdir_y(hooklen, pointdir);
+					spd = point_distance(0,0,hsp,vsp);
+					currangle = point_direction(aimx,aimy,x,y);
+					nextangle = point_direction(aimx,aimy,x+hsp,y+vsp);
+					anglediff = dsin(nextangle-currangle);
+					if (anglediff > 0) {
+						nextangle = currangle + 90;
+					} else if (anglediff < 0) {
+						nextangle = currangle - 90;
+					}
+					hsp = lengthdir_x(spd, nextangle);
+					vsp = lengthdir_y(spd, nextangle);
+					//_hookgrv *= 1.1;
+				}
+			}
 			hsp += lengthdir_x(_hookgrv, pointdir);
 			vsp += lengthdir_y(_hookgrv, pointdir);
 
@@ -237,6 +251,7 @@ if (!dead) {
 	} else {
 		instance_destroy(obj_grapplehook);
 		instance_destroy(obj_grapplepoint);
+		hooklen = point_distance(x,y,aimx,aimy);
 	}
 
 	if (instance_number(obj_grapplepoint) <= 0 && jumprelease && vsp < 0) {

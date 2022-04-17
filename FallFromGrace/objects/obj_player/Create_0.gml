@@ -72,3 +72,5 @@ spawny = y;
 aimx = x;
 aimy = y;
 aimtrue = false;
+
+circlehook = true;
