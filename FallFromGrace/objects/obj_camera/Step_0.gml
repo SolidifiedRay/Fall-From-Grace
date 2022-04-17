@@ -25,7 +25,7 @@ if (frame != noone) {
 	target = self;
 }
 
-if (instance_number(obj_death) > 0 && alarm[0] > 30) {
+if (instance_number(obj_death) > 0 && obj_death.alarm[0] > 30) {
 	viewright = viewx + vieww;
 	viewbot = viewy + viewh;
 	vieww *= 0.75;
