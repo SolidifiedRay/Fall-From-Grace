@@ -12,22 +12,11 @@ oldw = camera_get_view_width(view_camera[0]);
 
 frame = instance_position(obj_player.x,obj_player.y,obj_frame);
 if (frame != noone) {
-	framecontainer = frame.container;
-	container = instance_position(obj_player.x,obj_player.y,obj_framecontainer);
-
 	viewx = frame.xport;
 	viewy = frame.yport;
 	viewh = frame.hport;
 	vieww = frame.wport;
 	target = frame;
-	
-	if (framecontainer != container) {
-		viewx = x - startw / 2;
-		viewy = y - starth / 2;
-		vieww = startw;
-		viewh = starth;
-		target = self;
-	}
 } else {
 	viewx = x - startw / 2;
 	viewy = y - starth / 2;
