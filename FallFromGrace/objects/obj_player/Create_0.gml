@@ -81,3 +81,4 @@ tx = array_create(tlen, x);
 ty = array_create(tlen, y);
 tcolor = array_create(tlen, c_white);
 talpha = array_create(tlen, 1);
+tgaps = 1;
