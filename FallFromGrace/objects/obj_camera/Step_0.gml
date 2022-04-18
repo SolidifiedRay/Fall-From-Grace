@@ -25,6 +25,7 @@ if (frame != noone) {
 	target = self;
 }
 
+/*
 if (instance_number(obj_death) > 0 && obj_death.alarm[0] > 30) {
 	viewright = viewx + vieww;
 	viewbot = viewy + viewh;
@@ -41,7 +42,7 @@ if (instance_number(obj_death) > 0 && obj_death.alarm[0] > 30) {
 	viewy = deady;
 	viewx = deadx;
 }
-
+*/
 lerpw = lerp(oldw, vieww, camfactor);
 lerph = lerp(oldh, viewh, camfactor);
 lerpx = lerp(oldx, viewx, camfactor);

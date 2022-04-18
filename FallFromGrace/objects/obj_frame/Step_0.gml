@@ -9,10 +9,13 @@ if (container != noone) {
 	target = obj_player;
 	targetx = target.x;
 	targety = target.y;
+	
+	/*
 	if (instance_number(obj_death) > 0) {
 		targetx = obj_player.spawnx;
 		targety = obj_player.spawny;
 	}
+	*/
 	
 	if (hport * 16 / 9 < wport) {
 		yport = container.bbox_top;

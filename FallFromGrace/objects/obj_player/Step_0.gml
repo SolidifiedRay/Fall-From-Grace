@@ -393,10 +393,11 @@ if (!dead) {
 
 // =========================================
 } else {
-	x = spawnx;
-	y = spawny;
-	trailalpha = 0;
-	talpha[tcounter]=0;
+	x = lerp(x, spawnx, 0.055);
+	y = lerp(y, spawny, 0.055);
+	trailalpha = 0.5;
+	// talpha[tcounter]=0;
+	trailcolor = c_red;
 }
 
 tcounter++;
