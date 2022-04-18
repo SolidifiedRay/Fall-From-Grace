@@ -415,6 +415,14 @@ if (winning) {
 	totalframes++;
 }
 
+subs = instance_position(x,y,obj_subtitle);
+if (subs != noone) {
+	textsubs = subs.text;
+	textcolor = subs.color;
+} else {
+	textsubs = "";
+}
+
 frames = totalframes mod 60;
 seconds = (totalframes div 60) mod 60;
 minutes = (totalframes div 60) div 60;
