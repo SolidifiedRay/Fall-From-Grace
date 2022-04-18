@@ -75,13 +75,17 @@ aimtrue = false;
 
 circlehook = false;
 
-tlen = 120;
+//tlen = 120;
+tgaps = 2;
+ttimer = 0;
+ttime = 120;
+tlen = ttime div tgaps;
 tcounter = 0;
 tx = array_create(tlen, x);
 ty = array_create(tlen, y);
 tcolor = array_create(tlen, c_white);
 talpha = array_create(tlen, 1);
-tgaps = 1;
+
 
 textcolor = c_white;
 textsubs = "";

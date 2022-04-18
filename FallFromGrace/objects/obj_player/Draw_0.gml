@@ -5,16 +5,20 @@
 draw_set_alpha(1);
 
 draw_primitive_begin(pr_trianglestrip);
-for (i = 0; i < tlen; i+= tgaps) {
-	tcnow = (i + 1 + tcounter + tlen) mod tlen;
-	tclast = (tcnow - tgaps + tlen) mod tlen;
+for (i = 0; i < tlen; i+= 1) {
+	j = i;
+	//j = ceil(i/tgaps) * tgaps;
+	//tcnow = (j + tgaps + tcounter + tlen) mod tlen;
+	//tclast = (tcnow - tgaps + tlen) mod tlen;
+	tcnow = (j + tcounter + tlen) mod tlen;
+	tclast = (tcnow - 1 + tlen) mod tlen;
 	show_debug_message(tcnow);
 	tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
 	twid = 7;
-	twid *= i / tlen;
+	twid *= j / tlen;
 	
 	alpha1 = talpha[tcnow];
-	// alpha1 *= i / tlen;
+	// alpha1 *= j / tlen;
 	
 	color1 = tcolor[tcnow];
 	x1 = tx[tcnow];

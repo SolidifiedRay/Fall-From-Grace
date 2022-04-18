@@ -399,14 +399,20 @@ if (!dead) {
 	// talpha[tcounter]=0;
 	trailcolor = c_red;
 }
+ttimer++;
+if (ttimer >= tgaps) {
+	ttimer -= tgaps;
+	tx[tcounter] = x;
+	ty[tcounter] = y;
+	tcolor[tcounter] = trailcolor;
+	talpha[tcounter] = trailalpha;
+	tcounter++;
+	tcounter = tcounter mod tlen;
+}
 
-tcounter++;
-tcounter = tcounter mod tlen;
+
 	
-tx[tcounter] = x;
-ty[tcounter] = y;
-tcolor[tcounter] = trailcolor;
-talpha[tcounter] = trailalpha;
+
 
 if (winning) {
 	firework = instance_create_layer(x + 8 * cos(alarm[0]), y - 8 * sin(alarm[0]), "instances", obj_poof);
