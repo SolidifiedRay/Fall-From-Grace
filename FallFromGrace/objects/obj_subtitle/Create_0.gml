@@ -3,4 +3,4 @@
 
 text = "";
 color = c_white;
-image_alpha = 0.25;
+image_alpha = 0.15;

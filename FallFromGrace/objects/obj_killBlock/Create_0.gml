@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+image_blend = c_black;
 outline = instance_create_depth(x,y,depth+1,obj_phasekill_outline);
 w = 2;
 outline._x1 = bbox_left - w;
