@@ -103,12 +103,27 @@ if (!dead) {
 			adec = airdec;
 		}
 
-		if (hvec == 0 || hvec == -sign(hsp)) {
-			hsp -= sign(hsp) * adec;
-			if (abs(hsp) < ainc) hsp = 0;
-		}
-		if (abs(hsp + hvec * ainc) < airsp) {
-			hsp += hvec * ainc;
+		if (!instance_number(obj_grapplepoint) > 0) {
+			if (hvec == 0 || hvec == -sign(hsp)) {
+				hsp -= sign(hsp) * adec;
+				if (abs(hsp) < ainc) hsp = 0;
+			}
+			if (abs(hsp + hvec * ainc) < airsp) {
+				hsp += hvec * ainc;
+			}
+		} else {
+			if (hvec == 0 || hvec == -sign(hsp)) {
+				hsp -= sign(hsp) * adec;
+				if (abs(hsp) < ainc) hsp = 0;
+			}
+			spd = point_distance(0,0,hsp,vsp);
+			dir = point_direction(0,0,hvec,vvec);
+			if (abs(hsp + lengthdir_x(ainc,dir) < airsp)) {
+				hsp += lengthdir_x(ainc,dir);
+			}
+			if (abs(vsp + lengthdir_y(ainc,dir) < airsp)) {
+				vsp += lengthdir_y(ainc,dir);
+			}
 		}
 		//if (abs(hsp) > airsp) {
 		//	hsp = sign(hsp) * airsp;
