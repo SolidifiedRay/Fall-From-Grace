@@ -443,7 +443,7 @@ if (subs != noone) {
 } else {
 	textsubs = "";
 }
-
+spd = point_distance(0,0,hsp,vsp);
 frames = totalframes mod 60;
 seconds = (totalframes div 60) mod 60;
 minutes = (totalframes div 60) div 60;
