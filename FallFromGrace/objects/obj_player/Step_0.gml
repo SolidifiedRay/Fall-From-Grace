@@ -384,8 +384,8 @@ if (!dead) {
 		star = instance_create_layer(x+lengthdir_x(length, dir), y+lengthdir_y(length, dir), "instances", obj_star);
 		star.depth -= 10;
 		if (instance_number(obj_grapplepoint) > 0)	star.image_blend = trailcolor;
-		trailcolor = c_black;
-		trailalpha = 0.8 ;
+		trailcolor = instance_number(obj_grapplepoint) > 0 ? 1 : c_black;
+		trailalpha = 1 ;
 		if (irandom(2) == 0) star.image_blend = c_yellow;
 	} else {
 		trailalpha = 1;

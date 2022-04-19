@@ -4,6 +4,68 @@
 // draw_sprite_ext( sprite_index, image_index, x, y, image_xscale, image_yscale, rotation, image_blend, image_alpha);
 draw_set_alpha(1);
 
+indraw = false;
+flip = tcounter mod 2 ? 1 : -1;
+
+for (i = 0; i < tlen; i+= 1) {
+	j = i;
+	//j = ceil(i/tgaps) * tgaps;
+	//tcnow = (j + tgaps + tcounter + tlen) mod tlen;
+	//tclast = (tcnow - tgaps + tlen) mod tlen;
+	tcnow = (j + tcounter + tlen) mod tlen;
+	tclast = (tcnow - 1 + tlen) mod tlen;
+	show_debug_message(tcnow);
+
+	
+	flip *= -1;
+	// alpha1 *= j / tlen;
+	
+	color1 = tcolor[tcnow];
+	if (color1 <= 1) {
+		alpha1 = 1;
+		x1 = tx[tcnow];
+		y1 = ty[tcnow];
+		color1 = color1 == 1 ? c_aqua : c_white;
+	
+		
+		//flip = 1;
+		twid = 6;
+		twid *= flip * j / tlen;
+		twid += flip;
+
+		//tdir = random(360);
+		tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
+		x11 = x1+lengthdir_x(twid,tdir+90);
+		y11 = y1+lengthdir_y(twid,tdir+90);
+		x12 = x1+lengthdir_x(twid,tdir-90);
+		y12 = y1+lengthdir_y(twid,tdir-90);
+	
+		if (!indraw) {
+			indraw = true;
+			draw_primitive_begin(pr_trianglestrip);
+		}
+		draw_vertex_colour(x11,y11,irandom(8) ? color1 : c_yellow,alpha1);
+		if (i == tlen - 1) draw_vertex_colour(x12, y12,irandom(8) ? color1 : c_yellow,alpha1);
+
+	} else if (indraw) {
+		indraw = false;
+		draw_primitive_end();
+	}
+
+	//draw_vertex_colour(x11-random_range(-3,3), y11+random_range(-3,3),color1,alpha1);
+	//draw_vertex_colour(x12-random_range(-3,3), y12+random_range(-3,3),color1,alpha1);
+
+		
+	//draw_circle(x11,y11,2,1);
+	//draw_circle(x12,y12,2,1);
+}
+if (indraw) {
+	indraw = false;
+	draw_primitive_end();
+}
+
+flip = tcounter mod 2 ? 1 : -1;
+//draw_primitive_begin(pr_linestrip);
 draw_primitive_begin(pr_trianglestrip);
 for (i = 0; i < tlen; i+= 1) {
 	j = i;
@@ -14,13 +76,17 @@ for (i = 0; i < tlen; i+= 1) {
 	tclast = (tcnow - 1 + tlen) mod tlen;
 	show_debug_message(tcnow);
 	tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
-	twid = 7;
-	twid *= j / tlen;
+
 	
 	alpha1 = talpha[tcnow];
 	// alpha1 *= j / tlen;
 	
 	color1 = tcolor[tcnow];
+	twid = color1 <= 1 ? 5 : 7;
+	//twid = 7;
+	twid *= j / tlen;
+	twid *= flip;
+	flip *= -1;
 	x1 = tx[tcnow];
 	y1 = ty[tcnow];
 	
@@ -29,21 +95,23 @@ for (i = 0; i < tlen; i+= 1) {
 	x12 = x1+lengthdir_x(twid,tdir-90);
 	y12 = y1+lengthdir_y(twid,tdir-90);
 	
-
 	draw_vertex_colour(x11, y11,color1,alpha1);
-	draw_vertex_colour(x12, y12,color1,alpha1);
+	if (i == tlen - 1) draw_vertex_colour(x12, y12,color1,alpha1);
 		
 	//draw_circle(x11,y11,2,1);
 	//draw_circle(x12,y12,2,1);
-
 }
 draw_primitive_end();
 
 if (!dead) {
 	draw_set_colour(c_black);
-	if (in_phase) draw_set_colour(c_white);
+	radius = 7;
+	if (in_phase) {
+		draw_set_colour(c_white);
+		radius = 7 + random(1);
+	}
 
-	draw_circle(x,y,7,false);
+	draw_circle(x,y,radius,false);
 	
 	if (instance_number(obj_grapplepoint) > 0) {
 		draw_set_colour(c_aqua);
