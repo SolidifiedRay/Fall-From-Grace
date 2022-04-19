@@ -52,6 +52,7 @@
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},"order":1,},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},"order":6,},
     {"id":{"name":"spr_subtitleframe","path":"sprites/spr_subtitleframe/spr_subtitleframe.yy",},"order":18,},
+    {"id":{"name":"World018","path":"rooms/World018/World018.yy",},"order":18,},
     {"id":{"name":"TileSetGrapple","path":"tilesets/TileSetGrapple/TileSetGrapple.yy",},"order":11,},
     {"id":{"name":"spr_tileset2","path":"sprites/spr_tileset2/spr_tileset2.yy",},"order":2,},
     {"id":{"name":"obj_win","path":"objects/obj_win/obj_win.yy",},"order":11,},
@@ -157,6 +158,7 @@
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"World0","path":"rooms/World0/World0.yy",},},
+    {"roomId":{"name":"World018","path":"rooms/World018/World018.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

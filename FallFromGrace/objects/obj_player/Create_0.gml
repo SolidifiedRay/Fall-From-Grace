@@ -76,7 +76,7 @@ aimtrue = false;
 circlehook = false;
 
 //tlen = 120;
-tgaps = 2;
+tgaps = 1;
 ttimer = 0;
 ttime = 120;
 tlen = ttime div tgaps;

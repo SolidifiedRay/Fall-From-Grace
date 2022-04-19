@@ -55,7 +55,7 @@ camera_set_view_size(view_camera[0], lerpw, lerph);
 
 
 
-repeat(15) {
+repeat(12) {
 	xrand = random_range(newx,newx+lerpw);
 	yrand = random_range(newy,newy+lerpw);
 	if (position_meeting(xrand,yrand,obj_killBlock)) {
