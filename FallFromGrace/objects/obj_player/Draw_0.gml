@@ -110,8 +110,8 @@ if (!dead) {
 		draw_set_colour(c_white);
 		radius = 7 + random(1);
 	}
-
-	draw_circle(x,y,radius,false);
+	
+	//draw_circle(x,y,radius,false);
 	
 	if (instance_number(obj_grapplepoint) > 0) {
 		draw_set_colour(c_aqua);
@@ -182,7 +182,7 @@ if (!dead) {
 	}
 
 	draw_set_colour(trailcolor);
-	draw_circle(x,y,5,false);
+	//draw_circle(x,y,5,false);
 
 
 	
@@ -194,7 +194,7 @@ if (!dead) {
 		// draw_circle(aimx,aimy,point_distance(x,y,aimx,aimy)/2,1);
 		draw_set_alpha(0.3);
 		draw_set_colour(c_white);
-		draw_circle(aimx,aimy,hooklen,1);
+		//draw_circle(aimx,aimy,hooklen,1);
 		draw_set_alpha(1);
 		
 	} else {
@@ -202,10 +202,34 @@ if (!dead) {
 		color2 = c_black;
 	}
 	draw_set_colour(color1);
-	draw_circle(aimx,aimy,4,0);
+	//draw_circle(aimx,aimy,4,0);
 	draw_set_colour(color2);
-	draw_circle(aimx,aimy,3,0);
+	//draw_circle(aimx,aimy,3,0);
 	draw_set_colour(color1);
-	draw_circle(aimx,aimy,2,0);
+	//draw_circle(aimx,aimy,2,0);
+	
+	if (in_wall_slide){
+		if (wall_slide_dir == 1){
+			draw_sprite_ext(sPlayer_wall, 0, x-12, y, 1, 1, 0, c_white, 1 );
+		}
+		else {
+			draw_sprite_ext(sPlayer_wall, 0, x+12, y, -1, 1, 0, c_white, 1 );
+		}
+			
+	}
+	else if (grounded < 0){
+		if (vsp < 0){
+			draw_sprite_ext(sPlayer_air, 0, x, y, spr_dir, 1, 0, c_white, 1 );
+		}
+		else{
+			draw_sprite_ext(sPlayer_air, 1, x, y, spr_dir, 1, 0, c_white, 1 );
+		}
+	}
+	else if (hsp != 0){
+		draw_sprite_ext(sPlayer_run, spr_run_index, x, y, spr_dir, 1, 0, c_white, 1 );
+	}
+	else{
+		draw_sprite(sPlayer, 0, x, y);
+	}
 
 }

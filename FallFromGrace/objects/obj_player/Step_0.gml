@@ -1,7 +1,4 @@
-/// @desc
-
-
-/// @description Insert description here
+/// @desc/// @description Insert description here
 // You can write your code in this editor
 if (room == Level3 && place_meeting(x, y, obj_checkpoint)) {
 	LEVEL3_CHECKPOINT = true;
@@ -12,7 +9,6 @@ if (room == Level3 && LEVEL3_CHECKPOINT && respawn) {
 	y = obj_checkpoint.y;
 	respawn = false;
 }
-
 
 if (!dead) {
 
@@ -31,6 +27,20 @@ if (!dead) {
 
 	noclip = keyboard_check(ord("T"));
 	phase = phase || noclip;
+	
+	if left {
+		spr_dir = -1;
+	}
+	if right {
+		spr_dir = 1;
+	}
+	
+	if (left || right) {
+		spr_run_index += 0.5;
+		if (spr_run_index > 5){
+			spr_run_index = 0;
+		}
+	}
 
 	//Phase Mode
 	if (phase) {
@@ -166,7 +176,9 @@ if (!dead) {
 	// jump
 
 	if (!in_phase && ((grounded > 0) || (in_wall_slide)) && (jump)) {
-
+		if(in_wall_slide){
+			spr_dir *= -1;
+		}
 		if (in_wall_slide) {
 			hsp = -wjumphsp * wall_slide_dir;
 			vsp = -wjumpvsp;

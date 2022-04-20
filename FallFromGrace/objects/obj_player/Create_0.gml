@@ -90,3 +90,6 @@ talpha = array_create(tlen, 1);
 
 textcolor = c_white;
 textsubs = "";
+
+spr_dir = 1;
+spr_run_index = 0;
