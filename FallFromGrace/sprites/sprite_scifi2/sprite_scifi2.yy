@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"da75f7d9-ff7a-4616-be53-4b89e0378ac2","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"da75f7d9-ff7a-4616-be53-4b89e0378ac2","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"LayerId":{"name":"f066847b-e80a-43dd-b222-b78b7322c18e","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprite_scifi1","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"resourceVersion":"1.0","name":"da75f7d9-ff7a-4616-be53-4b89e0378ac2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},"LayerId":{"name":"c76498ef-eb6a-a0cf-33fb-c75ed1d63d83","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_scifi2","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},"resourceVersion":"1.0","name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sprite_scifi1","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},
+    "spriteId": {"name":"sprite_scifi2","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"b812d650-5fb2-4adf-a21e-f8e5a386b2e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"da75f7d9-ff7a-4616-be53-4b89e0378ac2","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"08615bd0-911e-4585-b0a3-1026b30e6f20","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sprite_scifi1","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},
+    "parent": {"name":"sprite_scifi2","path":"sprites/sprite_scifi2/sprite_scifi2.yy",},
     "resourceVersion": "1.4",
-    "name": "sprite_scifi1",
+    "name": "sprite_scifi2",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f066847b-e80a-43dd-b222-b78b7322c18e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c76498ef-eb6a-a0cf-33fb-c75ed1d63d83","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sprite_scifi1",
+  "name": "sprite_scifi2",
   "tags": [],
   "resourceType": "GMSprite",
 }
