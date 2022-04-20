@@ -14,7 +14,7 @@ for (i = 0; i < tlen; i+= 1) {
 	//tclast = (tcnow - tgaps + tlen) mod tlen;
 	tcnow = (j + tcounter + tlen) mod tlen;
 	tclast = (tcnow - 1 + tlen) mod tlen;
-	show_debug_message(tcnow);
+	//show_debug_message(tcnow);
 
 	
 	flip *= -1;
@@ -74,7 +74,7 @@ for (i = 0; i < tlen; i+= 1) {
 	//tclast = (tcnow - tgaps + tlen) mod tlen;
 	tcnow = (j + tcounter + tlen) mod tlen;
 	tclast = (tcnow - 1 + tlen) mod tlen;
-	show_debug_message(tcnow);
+	//show_debug_message(tcnow);
 	tdir = point_direction(tx[tclast],ty[tclast],tx[tcnow],ty[tcnow]);
 
 	
