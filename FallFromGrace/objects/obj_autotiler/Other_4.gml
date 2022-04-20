@@ -16,7 +16,9 @@ for (_xx = 0; _xx < room_width; _xx += UNIT_W) {
 UNIT_H = 16;
 UNIT_W = 16;
 
-var layerId = layer_create(0, "AutoTile");
+layerdepth = layer_get_depth("Collision");
+
+var layerId = layer_create(layerdepth-1, "AutoTile");
 var tileables = [
     { object: obj_solid, tilesetSprite: tileset_scifi2 },
 ]
@@ -34,7 +36,7 @@ with (obj_solid) {
 
 
 
-var layerId = layer_create(-1, "AutoTile1");
+var layerId = layer_create(layerdepth-2, "AutoTile1");
 var tileables = [
     { object: obj_solid2, tilesetSprite: tileset_scifi1 },
 ]
@@ -54,3 +56,7 @@ instance_destroy(obj_solid2);
 
 instance_destroy(obj_solid);
 
+obj_frame.visible = false;
+obj_subtitle.visible = false;
+obj_framecontainer.visible = false;
+obj_wall.visible = false;

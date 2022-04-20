@@ -50,6 +50,9 @@ lerpy = lerp(oldy, viewy, camfactor);
 newx = clamp(lerpx, 0, room_width - lerpw);
 newy = clamp(lerpy, 0, room_height - lerph);
 camera_set_view_target(view_camera[0],noone);
+//camera_set_view_pos(view_camera[0], floor(newx+0.5), floor(newy+0.5));
+//camera_set_view_size(view_camera[0], floor(lerpw+0.5), floor(lerph+0.5));
+
 camera_set_view_pos(view_camera[0], newx, newy);
 camera_set_view_size(view_camera[0], lerpw, lerph);
 
