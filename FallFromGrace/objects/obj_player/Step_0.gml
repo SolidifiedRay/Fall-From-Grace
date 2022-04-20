@@ -159,7 +159,7 @@ if (!dead) {
 	}
 
 	in_wall_slide = (wall_slide_timer < 8);
-	if (in_wall_slide && wall_slide_timer < 2) {
+	if (in_wall_slide && wall_slide_timer < 2 && !in_phase) {
 		hsp *= 0.5;
 	}
 
