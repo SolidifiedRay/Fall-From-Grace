@@ -146,8 +146,14 @@ if (!dead) {
 			vsp *= 0.75;
 		}
 		wall_slide_timer = 0;
-		wall_slide_dir = sign(hsp)
-						 trailcolor = c_lime;
+		wall_slide_dir = sign(hsp);
+		trailcolor = c_lime;
+	} else if (place_meeting(x + 1, y, obj_wall)) && (!place_meeting(x, y + vsp, obj_wall)) {
+		wall_slide_timer = 7;
+		wall_slide_dir = 1;
+	} else if (place_meeting(x - 1, y, obj_wall)) && (!place_meeting(x, y + vsp, obj_wall)) {
+		wall_slide_timer = 7;
+		wall_slide_dir = -1;
 	} else {
 		wall_slide_timer += 1;
 	}
