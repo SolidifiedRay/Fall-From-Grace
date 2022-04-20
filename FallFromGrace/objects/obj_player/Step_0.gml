@@ -22,8 +22,8 @@ if (!dead) {
 	right = keyboard_check(vk_right) || keyboard_check(ord("D"));
 	up = keyboard_check(vk_up) || keyboard_check(ord("W"));
 	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
-	jump = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("K"));
-	jumprelease = keyboard_check_released(vk_space) || keyboard_check_released(ord("K"));
+	jump = (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("K"))) ? 5 : jump - 1;
+	jumprelease = !keyboard_check(vk_space) && !keyboard_check(ord("K"));
 	//dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("J"));
 	phase = canphase && (keyboard_check(vk_shift) || keyboard_check(ord("J")));
 	hook = keyboard_check(ord("Z")) || keyboard_check(ord("L"));
@@ -159,6 +159,9 @@ if (!dead) {
 	}
 
 	in_wall_slide = (wall_slide_timer < 8);
+	if (in_wall_slide && wall_slide_timer < 2) {
+		hsp *= 0.5;
+	}
 
 	// jump
 
@@ -168,9 +171,12 @@ if (!dead) {
 			hsp = -wjumphsp * wall_slide_dir;
 			vsp = -wjumpvsp;
 			wall_jump_trail = wall_jump_timer;
+			wall_slide_timer = 8;
 		} else {
 			vsp = -jumpsp;
 		}
+		jump = false;
+		jumped = true;
 		audio_play_sound(sfx_jump, 0, 0);
 		grounded = 0;
 	}
@@ -246,7 +252,7 @@ if (!dead) {
 		if (instance_number(obj_grapplepoint) > 0) {
 			pointdir = point_direction(x, y, obj_grapplepoint.x, obj_grapplepoint.y);
 			_hookgrv = hookgrv;
-			
+			jumped = false;
 			if (circlehook) {
 				if (point_distance(x,y,obj_grapplepoint.x,obj_grapplepoint.y) > hooklen) {
 					x = obj_grapplepoint.x - lengthdir_x(hooklen, pointdir);
@@ -277,8 +283,9 @@ if (!dead) {
 		hooklen = point_distance(x,y,aimx,aimy);
 	}
 
-	if (instance_number(obj_grapplepoint) <= 0 && jumprelease && vsp < 0) {
+	if (instance_number(obj_grapplepoint) <= 0 && jumprelease && vsp < 0 && jumped) {
 		vsp /= 2;
+		jumped = false;
 	}
 
 	// normalize speed

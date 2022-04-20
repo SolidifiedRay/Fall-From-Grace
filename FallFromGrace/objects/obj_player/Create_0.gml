@@ -49,6 +49,7 @@ right = 0;
 up = 0;
 down = 0;
 jump = 0;
+jumped = false;
 
 hook = 0;
 
