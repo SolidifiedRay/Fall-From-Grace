@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "vfx",
+    "path": "folders/Objects/vfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_blob",

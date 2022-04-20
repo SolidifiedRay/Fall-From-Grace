@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "room components",
+    "path": "folders/Objects/room components.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_moving_platform",
