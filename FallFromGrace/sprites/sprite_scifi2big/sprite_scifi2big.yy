@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 125,
+  "bbox_right": 127,
   "bbox_top": 0,
-  "bbox_bottom": 110,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 128,
-  "height": 128,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"LayerId":{"name":"54b26a1c-6b94-4d76-ac32-58929ded2c72","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_phasekiller","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"resourceVersion":"1.0","name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"LayerId":{"name":"c76498ef-eb6a-a0cf-33fb-c75ed1d63d83","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_scifi2big","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"resourceVersion":"1.0","name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_phasekiller","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},
+    "spriteId": {"name":"sprite_scifi2big","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"db9c46c5-7d27-45f7-bbec-46ad1df99ea2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"08615bd0-911e-4585-b0a3-1026b30e6f20","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a493961d-ebb4-0f48-b4c1-14aef9730d4e","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_phasekiller","path":"sprites/spr_phasekiller/spr_phasekiller.yy",},
+    "parent": {"name":"sprite_scifi2big","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_phasekiller",
+    "name": "sprite_scifi2big",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54b26a1c-6b94-4d76-ac32-58929ded2c72","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c76498ef-eb6a-a0cf-33fb-c75ed1d63d83","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_phasekiller",
+  "name": "sprite_scifi2big",
   "tags": [],
   "resourceType": "GMSprite",
 }

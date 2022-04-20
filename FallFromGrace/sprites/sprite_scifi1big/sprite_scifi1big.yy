@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 125,
+  "bbox_right": 127,
   "bbox_top": 0,
-  "bbox_bottom": 110,
+  "bbox_bottom": 95,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 128,
-  "height": 128,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_allkiller/spr_allkiller.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_allkiller/spr_allkiller.yy",},"LayerId":{"name":"54b26a1c-6b94-4d76-ac32-58929ded2c72","path":"sprites/spr_allkiller/spr_allkiller.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_allkiller","path":"sprites/spr_allkiller/spr_allkiller.yy",},"resourceVersion":"1.0","name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7002acf1-c2b3-4de5-9cb2-75cf20ae726b","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7002acf1-c2b3-4de5-9cb2-75cf20ae726b","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},"LayerId":{"name":"e2937865-103a-4b89-af37-a40936dce265","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprite_scifi1big","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},"resourceVersion":"1.0","name":"7002acf1-c2b3-4de5-9cb2-75cf20ae726b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_allkiller","path":"sprites/spr_allkiller/spr_allkiller.yy",},
+    "spriteId": {"name":"sprite_scifi1big","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12a1190d-e24f-4948-a71d-ce88ca539a23","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ebf515f-84a5-4913-a5e6-1f55a3501c60","path":"sprites/spr_allkiller/spr_allkiller.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"985faa51-f56a-444a-aaec-5cc9d2c308b0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7002acf1-c2b3-4de5-9cb2-75cf20ae726b","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_allkiller","path":"sprites/spr_allkiller/spr_allkiller.yy",},
+    "parent": {"name":"sprite_scifi1big","path":"sprites/sprite_scifi1big/sprite_scifi1big.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_allkiller",
+    "name": "sprite_scifi1big",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"54b26a1c-6b94-4d76-ac32-58929ded2c72","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2937865-103a-4b89-af37-a40936dce265","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_allkiller",
+  "name": "sprite_scifi1big",
   "tags": [],
   "resourceType": "GMSprite",
 }

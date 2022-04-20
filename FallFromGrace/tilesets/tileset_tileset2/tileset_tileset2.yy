@@ -134,7 +134,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tileset_ts3",
+  "name": "tileset_tileset2",
   "tags": [],
   "resourceType": "GMTileSet",
 }

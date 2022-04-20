@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite_scifi2",
-    "path": "sprites/sprite_scifi2/sprite_scifi2.yy",
+    "name": "sprite_scifi2big",
+    "path": "sprites/sprite_scifi2big/sprite_scifi2big.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
