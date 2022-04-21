@@ -422,7 +422,7 @@ if (!dead) {
 		dir = random(360);
 		length = random(8);
 		star = instance_create_layer(x+lengthdir_x(length, dir), y+lengthdir_y(length, dir), "instances", obj_star);
-		star.depth -= 10;
+		star.depth = -999;
 		if (instance_number(obj_grapplepoint) > 0)	star.image_blend = trailcolor;
 		trailcolor = instance_number(obj_grapplepoint) > 0 ? 1 : c_black;
 		trailalpha = 1 ;

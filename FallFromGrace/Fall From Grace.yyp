@@ -81,6 +81,7 @@
     {"id":{"name":"background_1","path":"sprites/background_1/background_1.yy",},"order":17,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_autotiler","path":"objects/obj_autotiler/obj_autotiler.yy",},"order":2,},
+    {"id":{"name":"spr_fromgrace","path":"sprites/spr_fromgrace/spr_fromgrace.yy",},"order":38,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":3,},
     {"id":{"name":"spr_kill","path":"sprites/spr_kill/spr_kill.yy",},"order":6,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
