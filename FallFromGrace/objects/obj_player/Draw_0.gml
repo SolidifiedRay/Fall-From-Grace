@@ -208,25 +208,28 @@ if (!dead) {
 	draw_set_colour(color1);
 	//draw_circle(aimx,aimy,2,0);
 	
+	
+	image_blend = trailcolor;
+	if (image_blend <= 1) image_blend = c_yellow;
 	if (in_wall_slide){
 		if (wall_slide_dir == 1){
-			draw_sprite_ext(sPlayer_wall, 0, x-12, y, 1, 1, 0, c_white, 1 );
+			draw_sprite_ext(sPlayer_wall, 0, x-12, y, 1, 1, 0, image_blend, 1 );
 		}
 		else {
-			draw_sprite_ext(sPlayer_wall, 0, x+12, y, -1, 1, 0, c_white, 1 );
+			draw_sprite_ext(sPlayer_wall, 0, x+12, y, -1, 1, 0, image_blend, 1 );
 		}
 			
 	}
 	else if (grounded < 0){
 		if (vsp < 0){
-			draw_sprite_ext(sPlayer_air, 0, x, y, spr_dir, 1, 0, c_white, 1 );
+			draw_sprite_ext(sPlayer_air, 0, x, y, spr_dir, 1, 0, image_blend, 1 );
 		}
 		else{
-			draw_sprite_ext(sPlayer_air, 1, x, y, spr_dir, 1, 0, c_white, 1 );
+			draw_sprite_ext(sPlayer_air, 1, x, y, spr_dir, 1, 0, image_blend, 1 );
 		}
 	}
 	else if (hsp != 0){
-		draw_sprite_ext(sPlayer_run, spr_run_index, x, y, spr_dir, 1, 0, c_white, 1 );
+		draw_sprite_ext(sPlayer_run, spr_run_index, x, y, spr_dir, 1, 0, image_blend, 1 );
 	}
 	else{
 		draw_sprite(sPlayer, 0, x, y);
