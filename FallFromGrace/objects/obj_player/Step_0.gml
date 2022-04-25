@@ -67,7 +67,10 @@ if (!dead) {
 	}
 
 	// ============ Ground Checking ============
-	if (place_meeting(x, y + 1, obj_wall) and not in_phase) grounded = 4;
+	if (place_meeting(x, y + 1, obj_wall) and not in_phase) {
+		grounded = 4;
+		wall_slide_timer = 8;
+	}
 	else grounded--;
 	wall_jump_trail--;
 
