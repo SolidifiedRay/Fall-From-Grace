@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "tilesetting",
-    "path": "folders/Objects/tilesetting.yy",
+    "path": "folders/Objects/room components/tilesetting.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_solid",
