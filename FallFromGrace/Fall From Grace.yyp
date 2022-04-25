@@ -66,6 +66,7 @@
     {"id":{"name":"obj_double_jump","path":"objects/obj_double_jump/obj_double_jump.yy",},"order":2,},
     {"id":{"name":"obj_respawn","path":"objects/obj_respawn/obj_respawn.yy",},"order":0,},
     {"id":{"name":"obj_moving_platform","path":"objects/obj_moving_platform/obj_moving_platform.yy",},"order":9,},
+    {"id":{"name":"World0_1","path":"rooms/World0_1/World0_1.yy",},"order":20,},
     {"id":{"name":"Death3","path":"rooms/Death3/Death3.yy",},"order":2,},
     {"id":{"name":"obj_grapplehook","path":"objects/obj_grapplehook/obj_grapplehook.yy",},"order":1,},
     {"id":{"name":"Tileset2","path":"tilesets/Tileset2/Tileset2.yy",},"order":22,},
@@ -153,6 +154,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"World0_1","path":"rooms/World0_1/World0_1.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
