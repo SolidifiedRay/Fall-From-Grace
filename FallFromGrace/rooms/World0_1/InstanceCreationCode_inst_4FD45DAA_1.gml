@@ -1,1 +1,1 @@
-text = "Try Phasing Down";
+text = "I shouldn't phase in the rifts.";
