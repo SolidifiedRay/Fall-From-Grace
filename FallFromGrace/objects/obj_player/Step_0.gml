@@ -239,7 +239,7 @@ if (!dead) {
 		
 		}
 		if (instance_place(aimx, aimy, obj_wall) != noone) {
-			if (instance_place(aimx, aimy, obj_wall).object_index = obj_wall) {
+			if (instance_place(aimx, aimy, obj_wall).object_index = obj_wall) || (instance_place(aimx, aimy, obj_wall).object_index = obj_moving_grapple) {
 				aimtrue = true;
 			}
 		}

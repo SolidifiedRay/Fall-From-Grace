@@ -23,6 +23,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_racecheckpoint","path":"objects/obj_racecheckpoint/obj_racecheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4278190335,"rotation":0.0,"scaleX":3.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2112.0,"y":576.0,"resourceVersion":"1.0","name":"inst_1801D817","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_racecheckpoint","path":"objects/obj_racecheckpoint/obj_racecheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4278190335,"rotation":0.0,"scaleX":3.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":576.0,"resourceVersion":"1.0","name":"inst_50097FE8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_racecheckpoint","path":"objects/obj_racecheckpoint/obj_racecheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4278190335,"rotation":0.0,"scaleX":3.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1472.0,"y":896.0,"resourceVersion":"1.0","name":"inst_45055E5A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_riftslash","path":"objects/obj_riftslash/obj_riftslash.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1024.0,"y":1408.0,"resourceVersion":"1.0","name":"inst_6EB8BF97","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
@@ -116,6 +117,7 @@
     {"name":"inst_1801D817","path":"rooms/GrappleTest/GrappleTest.yy",},
     {"name":"inst_50097FE8","path":"rooms/GrappleTest/GrappleTest.yy",},
     {"name":"inst_45055E5A","path":"rooms/GrappleTest/GrappleTest.yy",},
+    {"name":"inst_6EB8BF97","path":"rooms/GrappleTest/GrappleTest.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
