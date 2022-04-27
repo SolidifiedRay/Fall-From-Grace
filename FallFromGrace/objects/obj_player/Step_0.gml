@@ -1,5 +1,3 @@
-/// @desc/// @description Insert description here
-// You can write your code in this editor
 if (room == Level3 && place_meeting(x, y, obj_checkpoint)) {
 	LEVEL3_CHECKPOINT = true;
 }
@@ -375,7 +373,12 @@ if (!dead) {
 		|| (position_meeting(x, y, obj_spike) && !in_phase && !dead && !winning) {
 		instance_create_layer(x, y, "instances", obj_death);
 	}
+	var nograv = instance_position(x + hsp, y + vsp, obj_nograv);
+	if (nograv != noone) {
 
+			vsp -= ((y - nograv.bbox_top) / nograv.sprite_height) * 2;
+		
+	}
 	// win
 	if (collision_line(x, y, x + hsp, y + vsp, obj_win, 0, 0) && !dead && !winning) {
 		alarm[0] = 240;
