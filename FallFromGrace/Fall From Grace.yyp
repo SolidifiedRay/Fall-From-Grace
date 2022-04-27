@@ -118,6 +118,7 @@
     {"id":{"name":"sfx_shoot","path":"sounds/sfx_shoot/sfx_shoot.yy",},"order":2,},
     {"id":{"name":"obj_racecheckpoint","path":"objects/obj_racecheckpoint/obj_racecheckpoint.yy",},"order":3,},
     {"id":{"name":"spr_god","path":"sprites/spr_god/spr_god.yy",},"order":27,},
+    {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"order":14,},
     {"id":{"name":"Death1","path":"rooms/Death1/Death1.yy",},"order":0,},
     {"id":{"name":"fnt_subtitle","path":"fonts/fnt_subtitle/fnt_subtitle.yy",},"order":2,},
     {"id":{"name":"obj_button_level","path":"objects/obj_button_level/obj_button_level.yy",},"order":3,},

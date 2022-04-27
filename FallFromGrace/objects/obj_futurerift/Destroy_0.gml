@@ -1,7 +1,7 @@
 
 rift = instance_create_layer(x,y,"collision",obj_killBlock);
-rift.image_xscale *= 0.5;
-rift.image_yscale *= 0.5;
+//rift.image_xscale *= 0.5;
+//rift.image_yscale *= 0.5;
 rift.x = rift.x & ~31;
 rift.y = rift.y & ~31;
 
