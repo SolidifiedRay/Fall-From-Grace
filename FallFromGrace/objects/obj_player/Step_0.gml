@@ -377,6 +377,7 @@ if (!dead) {
 	if (nograv != noone) {
 
 			vsp -= ((y - nograv.bbox_top) / nograv.sprite_height) * 2;
+			vsp *= 0.95;
 		
 	}
 	// win
