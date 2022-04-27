@@ -112,6 +112,7 @@
     {"id":{"name":"obj_framecontainer","path":"objects/obj_framecontainer/obj_framecontainer.yy",},"order":2,},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":0,},
     {"id":{"name":"obj_poof","path":"objects/obj_poof/obj_poof.yy",},"order":3,},
+    {"id":{"name":"Level5","path":"rooms/Level5/Level5.yy",},"order":21,},
     {"id":{"name":"spr_aimtrue","path":"sprites/spr_aimtrue/spr_aimtrue.yy",},"order":29,},
     {"id":{"name":"spr_spikewarning","path":"sprites/spr_spikewarning/spr_spikewarning.yy",},"order":19,},
     {"id":{"name":"thumbnail","path":"sprites/thumbnail/thumbnail.yy",},"order":11,},
@@ -178,6 +179,7 @@
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"World0","path":"rooms/World0/World0.yy",},},
     {"roomId":{"name":"_WORLDTEMPLATE","path":"rooms/_WORLDTEMPLATE/_WORLDTEMPLATE.yy",},},
+    {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -215,7 +217,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.3.0.624",
   },
   "resourceVersion": "1.5",
   "name": "Fall From Grace",
