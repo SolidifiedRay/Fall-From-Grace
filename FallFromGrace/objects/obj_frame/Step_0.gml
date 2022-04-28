@@ -6,7 +6,7 @@ if (container != noone) {
 	yport = bbox_top;
 	hport = container.bbox_bottom - container.bbox_top;
 	wport = container.bbox_right - container.bbox_left;
-	target = obj_player;
+	target = obj_camera;
 	targetx = target.x;
 	targety = target.y;
 	
