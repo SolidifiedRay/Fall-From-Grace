@@ -15,8 +15,8 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":1248.0,"resourceVersion":"1.0","name":"inst_6208F744_1_1_5_2","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":7.0,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1720.0,"y":656.0,"resourceVersion":"1.0","name":"inst_66A1391A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_teleport","path":"objects/obj_teleport/obj_teleport.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":6.0,"scaleY":6.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":720.0,"resourceVersion":"1.0","name":"inst_3CECC29E","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_respawn","path":"objects/obj_respawn/obj_respawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.125,"scaleY":1.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1708.0,"y":704.0,"resourceVersion":"1.0","name":"inst_5D09D1B8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Rift","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -530,7 +530,6 @@
     {"name":"inst_51485332","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_10AD542A","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_54AE6F4","path":"rooms/Level3/Level3.yy",},
-    {"name":"inst_66A1391A","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_4FD8047A","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_7F54F2F0","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_7B17186B","path":"rooms/Level3/Level3.yy",},
@@ -567,6 +566,7 @@
     {"name":"inst_579F6883","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_67EDA9DA","path":"rooms/Level3/Level3.yy",},
     {"name":"inst_3A15C90E","path":"rooms/Level3/Level3.yy",},
+    {"name":"inst_5D09D1B8","path":"rooms/Level3/Level3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
