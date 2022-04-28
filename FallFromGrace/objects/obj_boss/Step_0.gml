@@ -22,13 +22,25 @@ if (not dead){
 		break;
 		
 		case 1: //horizontal left to right 
-			newrs = instance_create_layer(x-50,y+300, "Collision", obj_riftslash)
+			newrs = instance_create_layer(obj_player.x-150,obj_player.y, "Collision", obj_riftslash)
 			newrs.speed =50;
-			newrs.hsp = 10;
-			newrs.vsp = 0;
+			newrs.direction = 0;
 			newrs.alarm[0]=10;
 			pattern =0;
 		break;
+		
+		case 2:
+			newrs = instance_create_layer(obj_player.x, obj_player.y-300, "Collision",obj_riftslash)
+			newrs.speed = 50;
+			newrs.direction = -90;
+			newrs.alarm[0]=10;
+			pattern = 0;
+		break;
+		
+		
+			
+		
+		
 	}
 	clock++;
 }
