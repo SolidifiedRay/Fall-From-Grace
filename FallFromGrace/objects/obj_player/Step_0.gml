@@ -12,16 +12,16 @@ if (!dead) {
 
 	// ============ Input Handling ============
 	// check direction key pressed
-	left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-	right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-	up = keyboard_check(vk_up) || keyboard_check(ord("W"));
-	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
-	jump = (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("K"))) ? 5 : jump - 1;
-	jumprelease = !keyboard_check(vk_space) && !keyboard_check(ord("K"));
+	left = global.down[input.L];
+	right = global.down[input.R];
+	up = global.down[input.U];
+	down = global.down[input.D];
+	jump = global.pressed[input.JUMP] ? 5 : jump - 1;
+	jumprelease = !global.down[input.JUMP];
 	//dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("J"));
-	phase = canphase && (keyboard_check(vk_shift) || keyboard_check(ord("J")));
-	hook = keyboard_check(ord("Z")) || keyboard_check(ord("L"));
-	hookdown = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("L"));
+	phase = canphase && global.down[input.PHASE];
+	hook =global.down[input.HOOK];
+	hookdown = global.pressed[input.HOOK];
 
 	noclip = keyboard_check(ord("T"));
 	phase = phase || noclip;

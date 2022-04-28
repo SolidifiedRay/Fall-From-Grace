@@ -3,6 +3,7 @@
     {"id":{"name":"auto_tile","path":"scripts/auto_tile/auto_tile.yy",},"order":0,},
     {"id":{"name":"obj_spawnanim","path":"objects/obj_spawnanim/obj_spawnanim.yy",},"order":4,},
     {"id":{"name":"spr_level4","path":"sprites/spr_level4/spr_level4.yy",},"order":7,},
+    {"id":{"name":"Init","path":"rooms/Init/Init.yy",},"order":23,},
     {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":1,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":5,},
     {"id":{"name":"Room_Win","path":"rooms/Room_Win/Room_Win.yy",},"order":3,},
@@ -14,6 +15,7 @@
     {"id":{"name":"obj_riftslash","path":"objects/obj_riftslash/obj_riftslash.yy",},"order":12,},
     {"id":{"name":"obj_star","path":"objects/obj_star/obj_star.yy",},"order":5,},
     {"id":{"name":"obj_phasekill_outline","path":"objects/obj_phasekill_outline/obj_phasekill_outline.yy",},"order":1,},
+    {"id":{"name":"obj_inputhandler","path":"objects/obj_inputhandler/obj_inputhandler.yy",},"order":45,},
     {"id":{"name":"sfx_miss","path":"sounds/sfx_miss/sfx_miss.yy",},"order":5,},
     {"id":{"name":"spr_moving_grapple","path":"sprites/spr_moving_grapple/spr_moving_grapple.yy",},"order":20,},
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"order":1,},
@@ -166,6 +168,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Init","path":"rooms/Init/Init.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"_CUTSCENETEMPLATE","path":"rooms/_CUTSCENETEMPLATE/_CUTSCENETEMPLATE.yy",},},
     {"roomId":{"name":"World0_1","path":"rooms/World0_1/World0_1.yy",},},
