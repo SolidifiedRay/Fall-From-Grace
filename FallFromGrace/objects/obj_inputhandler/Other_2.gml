@@ -11,6 +11,8 @@ enum input {
 	length
 }
 
+global.inputstr = array_create(input.length,"");
+
 
 // input.length[player][input]
 global.down     = array_create(input.length,0);
@@ -22,16 +24,39 @@ global.binding  = array_create(input.length,0);
 
 for (var i = 0; i < input.length; i++) {
 	var v = -1;
+	var label = "";
 	switch i {
-		case input.L: v = ord("A"); break;
-		case input.D: v = ord("S"); break;
-		case input.U: v = ord("W"); break;
-		case input.R: v = ord("D"); break;
-		case input.JUMP: v = vk_space; break;
-		case input.PHASE: v = vk_shift; break;
-		case input.HOOK: v = ord("L"); break;
+		case input.L: 
+			v = ord("A");
+			label = "Left";
+			break;
+		case input.D:
+			v = ord("S");
+			label = "Down";
+			break;
+		case input.U: 
+			v = ord("W");
+			label = "Up"; 
+			break;
+		case input.R: 
+			v = ord("D"); 
+			label = "Right";
+			break;
+		case input.JUMP: 
+			v = vk_space; 
+			label = "Jump";
+			break;
+		case input.PHASE: 
+			v = vk_shift; 
+			label = "Phase";
+			break;
+		case input.HOOK: 
+			v = ord("L"); 
+			label = "Grapple";
+			break;
 	}
 	global.binding[i] = v;
+	global.inputstr[i] = label;
 }
 
 room_goto(Start);
