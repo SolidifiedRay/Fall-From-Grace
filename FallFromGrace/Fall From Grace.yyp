@@ -178,7 +178,6 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Init","path":"rooms/Init/Init.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
-    {"roomId":{"name":"_CUTSCENETEMPLATE","path":"rooms/_CUTSCENETEMPLATE/_CUTSCENETEMPLATE.yy",},},
     {"roomId":{"name":"World0_1","path":"rooms/World0_1/World0_1.yy",},},
     {"roomId":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
@@ -196,6 +195,7 @@
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
     {"roomId":{"name":"Level4","path":"rooms/Level4/Level4.yy",},},
     {"roomId":{"name":"World0","path":"rooms/World0/World0.yy",},},
+    {"roomId":{"name":"_CUTSCENETEMPLATE","path":"rooms/_CUTSCENETEMPLATE/_CUTSCENETEMPLATE.yy",},},
     {"roomId":{"name":"_WORLDTEMPLATE","path":"rooms/_WORLDTEMPLATE/_WORLDTEMPLATE.yy",},},
     {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"roomId":{"name":"Setting","path":"rooms/Setting/Setting.yy",},},
