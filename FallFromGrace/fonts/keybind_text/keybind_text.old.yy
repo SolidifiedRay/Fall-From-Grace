@@ -1097,7 +1097,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Font2",
+  "name": "keybind_text",
   "tags": [],
   "resourceType": "GMFont",
 }

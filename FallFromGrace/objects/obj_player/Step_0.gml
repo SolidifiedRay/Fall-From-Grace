@@ -12,16 +12,16 @@ if (!dead) {
 
 	// ============ Input Handling ============
 	// check direction key pressed
-	left = keyboard_check(vk_left) || keyboard_check(ord("A"));
-	right = keyboard_check(vk_right) || keyboard_check(ord("D"));
-	up = keyboard_check(vk_up) || keyboard_check(ord("W"));
-	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
-	jump = (keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("K"))) ? 5 : jump - 1;
-	jumprelease = !keyboard_check(vk_space) && !keyboard_check(ord("K"));
+	left = keyboard_check(global.left_key) || keyboard_check(global.left_subKey);
+	right = keyboard_check(global.right_key) || keyboard_check(global.right_subKey);
+	up = keyboard_check(global.up_key) || keyboard_check(global.up_subKey);
+	down = keyboard_check(global.down_key) || keyboard_check(global.down_subKey);
+	jump = (keyboard_check_pressed(global.jump_key) || keyboard_check_pressed(global.jump_subKey)) ? 5 : jump - 1;
+	jumprelease = !keyboard_check(global.jump_key) && !keyboard_check(global.jump_subKey);
 	//dash = keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("J"));
-	phase = canphase && (keyboard_check(vk_shift) || keyboard_check(ord("J")));
-	hook = keyboard_check(ord("Z")) || keyboard_check(ord("L"));
-	hookdown = keyboard_check_pressed(ord("Z")) || keyboard_check_pressed(ord("L"));
+	phase = canphase && (keyboard_check(global.phase_key) || keyboard_check(global.phase_subKey));
+	hook = keyboard_check(global.hook_key) || keyboard_check(global.hook_subKey);
+	hookdown = keyboard_check_pressed(global.hook_key) || keyboard_check_pressed(global.hook_subKey);
 
 	noclip = keyboard_check(ord("T"));
 	phase = phase || noclip;
