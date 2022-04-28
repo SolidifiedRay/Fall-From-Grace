@@ -112,6 +112,7 @@
     {"id":{"name":"obj_checkpoint_manager","path":"objects/obj_checkpoint_manager/obj_checkpoint_manager.yy",},"order":1,},
     {"id":{"name":"TileSetNeonIndustry","path":"tilesets/TileSetNeonIndustry/TileSetNeonIndustry.yy",},"order":16,},
     {"id":{"name":"spr_blob","path":"sprites/spr_blob/spr_blob.yy",},"order":17,},
+    {"id":{"name":"Init","path":"rooms/Init/Init.yy",},"order":24,},
     {"id":{"name":"sPlayer_run","path":"sprites/sPlayer_run/sPlayer_run.yy",},"order":3,},
     {"id":{"name":"sprite_moving_platform","path":"sprites/sprite_moving_platform/sprite_moving_platform.yy",},"order":13,},
     {"id":{"name":"obj_solid2","path":"objects/obj_solid2/obj_solid2.yy",},"order":1,},
@@ -175,6 +176,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Init","path":"rooms/Init/Init.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"_CUTSCENETEMPLATE","path":"rooms/_CUTSCENETEMPLATE/_CUTSCENETEMPLATE.yy",},},
     {"roomId":{"name":"World0_1","path":"rooms/World0_1/World0_1.yy",},},
