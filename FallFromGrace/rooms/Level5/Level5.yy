@@ -60,6 +60,7 @@
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Collision","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":4960.0,"resourceVersion":"1.0","name":"inst_5D80CC8B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_teleport","path":"objects/obj_teleport/obj_teleport.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":105.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":2528.0,"resourceVersion":"1.0","name":"inst_1C871340","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"background_1","path":"sprites/background_1/background_1.yy",},"colour":4279899409,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":480,"gridY":320,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Backgrounds_1","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -107,8 +108,9 @@
     {"name":"inst_5BD51475","path":"rooms/Level5/Level5.yy",},
     {"name":"inst_5B42A165","path":"rooms/Level5/Level5.yy",},
     {"name":"inst_7AD8E41E","path":"rooms/Level5/Level5.yy",},
-    {"name":"inst_57CFF63B","path":"rooms/Level5/Level5.yy",},
     {"name":"inst_5D80CC8B","path":"rooms/Level5/Level5.yy",},
+    {"name":"inst_57CFF63B","path":"rooms/Level5/Level5.yy",},
+    {"name":"inst_1C871340","path":"rooms/Level5/Level5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
