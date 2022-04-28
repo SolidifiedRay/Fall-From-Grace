@@ -236,11 +236,22 @@ if (!dead) {
 			}
 		
 		}
-		if (instance_place(aimx, aimy, obj_wall) != noone) {
-			if (instance_place(aimx, aimy, obj_wall).object_index = obj_wall) || (instance_place(aimx, aimy, obj_wall).object_index = obj_moving_grapple) {
-				aimtrue = true;
+		aimy--;
+		aimx+=facing;
+		var _list = ds_list_create();
+		var _num = instance_place_list(aimx, aimy, obj_wall, _list, true);
+		if _num > 0
+		{
+			for (var i = 0; i < _num; ++i;)
+			{
+			    wall = _list[| i];
+				if (wall.object_index == obj_wall) || (wall.object_index == obj_moving_grapple) {
+					aimtrue = true;
+				}
 			}
 		}
+
+		ds_list_destroy(_list);
 	}
 	// aimsprite = aimtrue ? spr_aimtrue : spr_aimfalse;
 
