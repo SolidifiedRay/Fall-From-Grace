@@ -1,1 +1,0 @@
-checknum = 1;
