@@ -24,12 +24,12 @@ if (not dead){
 			case 120: pattern = 3; break;
 			case 180: pattern = 4; break;
 		}
-		if (clock mod 15 == 0) {
-			newrs = instance_create_layer(x,y, "Collision", obj_riftslash)
-			newrs.speed =50;
-			newrs.direction = 0.7 * -clock;
-			newrs.alarm[0]=20;
-		}
+		//if (clock mod 15 == 0) {
+		//	newrs = instance_create_layer(x,y, "Collision", obj_riftslash)
+		//	newrs.speed =50;
+		//	newrs.direction = 0.7 * -clock;
+		//	newrs.alarm[0]=20;
+		//}
 	}
 
 	
