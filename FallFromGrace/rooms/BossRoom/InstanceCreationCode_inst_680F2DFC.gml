@@ -1,6 +1,7 @@
 var angle = 12;
 
-for (i = 0; i < 32; i++) {
+checkpointcount = 120;
+for (i = 0; i < checkpointcount; i++) {
 	checkpoint = instance_create_layer(x,y,"instances",obj_racecheckpoint);
 	checkpoint.image_angle = angle * -i;
 	checkpoint.checknum = i;
