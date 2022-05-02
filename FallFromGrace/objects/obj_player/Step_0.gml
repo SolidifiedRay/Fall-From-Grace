@@ -449,6 +449,30 @@ if (!dead) {
 	} else {
 		trailalpha = 1;
 	}
+	
+	var _list = ds_list_create();
+	var _num = instance_place_list(x, y, obj_racecheckpoint, _list, false);
+
+	if _num > 0
+	{
+		var maxchecknum = checknum - 1;
+		show_debug_message(maxchecknum);
+	    for (var i = 0; i < _num; ++i;)
+	    {
+			rcp = _list[| i];
+			
+			if (abs(checknum - rcp.checknum) <= 1) {
+				if (rcp.checknum > maxchecknum) maxchecknum = rcp.checknum;
+				checknum = maxchecknum;
+			}
+	    }
+		
+	}
+
+	ds_list_destroy(_list);
+
+
+
 
 // =========================================
 } else {
