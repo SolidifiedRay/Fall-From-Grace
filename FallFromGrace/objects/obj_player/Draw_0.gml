@@ -230,6 +230,7 @@ if (!dead) {
 	}
 	else if (hsp != 0){
 		draw_sprite_ext(sPlayer_run, spr_run_index, x, y, spr_dir, 1, 0, image_blend, 1 );
+		draw_sprite_ext(sPlayer_run, spr_run_index, x, y, spr_dir, 1, 0, image_blend, 1 );
 	}
 	else{
 		draw_sprite(sPlayer, 0, x, y);

@@ -25,6 +25,7 @@ if (!dead) {
 
 	noclip = keyboard_check(ord("T"));
 	phase = phase || noclip;
+	phase = phase || (instance_number(obj_boss) && !obj_boss.dead);
 	
 	if left {
 		spr_dir = -1;

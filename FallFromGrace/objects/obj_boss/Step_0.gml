@@ -17,6 +17,15 @@ if (not dead){
 		star.image_yscale = star.image_xscale
 	}
 	
+	if (!obj_player.dead && clock > 240) {
+		switch (clock mod 300) {
+			case 0: pattern = 1; break;
+			case 60: pattern = 2; break;
+			case 120: pattern = 3; break;
+			case 180: pattern = 4; break;
+		}
+	}
+	
 	switch(pattern){
 		case 0:
 		break;

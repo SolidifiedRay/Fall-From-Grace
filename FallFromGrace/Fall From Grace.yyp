@@ -118,6 +118,7 @@
     {"id":{"name":"obj_solid2","path":"objects/obj_solid2/obj_solid2.yy",},"order":1,},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":0,},
     {"id":{"name":"Setting","path":"rooms/Setting/Setting.yy",},"order":23,},
+    {"id":{"name":"BossRoom","path":"rooms/BossRoom/BossRoom.yy",},"order":25,},
     {"id":{"name":"sprite_scifi2big","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"order":34,},
     {"id":{"name":"sfx_undies","path":"sounds/sfx_undies/sfx_undies.yy",},"order":7,},
     {"id":{"name":"obj_framecontainer","path":"objects/obj_framecontainer/obj_framecontainer.yy",},"order":2,},
@@ -199,6 +200,7 @@
     {"roomId":{"name":"_WORLDTEMPLATE","path":"rooms/_WORLDTEMPLATE/_WORLDTEMPLATE.yy",},},
     {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"roomId":{"name":"Setting","path":"rooms/Setting/Setting.yy",},},
+    {"roomId":{"name":"BossRoom","path":"rooms/BossRoom/BossRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
