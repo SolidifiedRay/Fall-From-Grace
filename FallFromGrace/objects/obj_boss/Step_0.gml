@@ -18,12 +18,15 @@ if (not dead){
 	}
 	
 	if (!obj_player.dead && clock > 60) {
+		
 		switch (clock mod 300) {
 			case 0: pattern = 1; break;
 			case 60: pattern = 2; break;
 			case 120: pattern = 3; break;
 			case 180: pattern = 4; break;
+			case 240: pattern = 5; break;
 		}
+		
 		//if (clock mod 15 == 0) {
 		//	newrs = instance_create_layer(x,y, "Collision", obj_riftslash)
 		//	newrs.speed =50;
@@ -69,7 +72,20 @@ if (not dead){
 			newrs.alarm[0]=10;
 			pattern = 0;
 		break;
+		
+		case 5:
+			newrs1 = instance_create_layer(obj_player.x-150, obj_player.y-150, "Collision",obj_riftslash)
+			newrs1.speed = 50;
+			newrs1.direction = -45;
+			newrs1.alarm[0]=10;
 			
+			
+			newrs2 = instance_create_layer(obj_player.x+150, obj_player.y-150, "Collision",obj_riftslash)
+			newrs2.speed = 50;
+			newrs2.direction = -135;
+			newrs2.alarm[0]=10;
+			pattern = 0;
+		break;
 			
 		
 		
