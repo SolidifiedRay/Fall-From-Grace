@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"auto_tile","path":"scripts/auto_tile/auto_tile.yy",},"order":0,},
+    {"id":{"name":"spr_level7","path":"sprites/spr_level7/spr_level7.yy",},"order":13,},
     {"id":{"name":"obj_spawnanim","path":"objects/obj_spawnanim/obj_spawnanim.yy",},"order":4,},
     {"id":{"name":"spr_level4","path":"sprites/spr_level4/spr_level4.yy",},"order":7,},
     {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":2,},
@@ -79,7 +80,9 @@
     {"id":{"name":"obj_futurerift","path":"objects/obj_futurerift/obj_futurerift.yy",},"order":13,},
     {"id":{"name":"sprite_ts3","path":"sprites/sprite_ts3/sprite_ts3.yy",},"order":33,},
     {"id":{"name":"background_0","path":"sprites/background_0/background_0.yy",},"order":16,},
+    {"id":{"name":"spr_level8","path":"sprites/spr_level8/spr_level8.yy",},"order":14,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":0,},
+    {"id":{"name":"spr_level9","path":"sprites/spr_level9/spr_level9.yy",},"order":15,},
     {"id":{"name":"spr_nograv","path":"sprites/spr_nograv/spr_nograv.yy",},"order":21,},
     {"id":{"name":"sprite_scifi1","path":"sprites/sprite_scifi1/sprite_scifi1.yy",},"order":31,},
     {"id":{"name":"spr_poof","path":"sprites/spr_poof/spr_poof.yy",},"order":5,},
@@ -117,6 +120,7 @@
     {"id":{"name":"sprite_moving_platform","path":"sprites/sprite_moving_platform/sprite_moving_platform.yy",},"order":13,},
     {"id":{"name":"obj_solid2","path":"objects/obj_solid2/obj_solid2.yy",},"order":1,},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":0,},
+    {"id":{"name":"spr_level6","path":"sprites/spr_level6/spr_level6.yy",},"order":12,},
     {"id":{"name":"Setting","path":"rooms/Setting/Setting.yy",},"order":23,},
     {"id":{"name":"BossRoom","path":"rooms/BossRoom/BossRoom.yy",},"order":25,},
     {"id":{"name":"sprite_scifi2big","path":"sprites/sprite_scifi2big/sprite_scifi2big.yy",},"order":34,},
