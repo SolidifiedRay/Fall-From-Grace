@@ -7,5 +7,5 @@ color = c_white;
 timer = tlen;
 
 
-lentospawn=16;
+lentospawn=32;
 disttraveled=0;
