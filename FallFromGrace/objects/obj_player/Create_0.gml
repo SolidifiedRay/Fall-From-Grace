@@ -30,7 +30,7 @@ wjumpdec = 0.1;
 hookgrv = 1;
 hookinc = 0.3;
 hookdec = 0.1;
-hookready = true;
+
 hooklen = 0;
 
 canphase = true;
@@ -60,6 +60,8 @@ facing = 1;
 instance_create_layer(x,y-64,"instances",obj_camera);
 dead = false;
 winning = false;
+
+checknum = 0;
 
 totalframes = 0;
 frames = totalframes mod 60;
