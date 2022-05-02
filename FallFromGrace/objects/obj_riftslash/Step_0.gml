@@ -5,10 +5,13 @@ tx[tcounter] = x;
 ty[tcounter] = y;
 tcounter++;
 tcounter = tcounter mod tlen;
-rotation = point_direction(0,0,hsp,vsp);
 
-newrift = instance_create_layer(x,y, "Collision", obj_futurerift);
-newrift.alarm[0] = 20;
+disttraveled+=speed;
+if disttraveled > lentospawn {
+	newrift = instance_create_layer(x,y, "Collision", obj_futurerift);
+	newrift.alarm[0] = 20;
+	disttraveled -= lentospawn; 
+}
 
-x += hsp;
-y += vsp;
+
+

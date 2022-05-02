@@ -8,7 +8,7 @@ for (i = 0; i < tlen; i+= 1) {
 	tcdir = point_direction(tx[tcnow],ty[tcnow],tx[tcnext],ty[tcnext]);
 	//tdir = rotation;
 	if (point_distance(tx[tcnow],ty[tcnow],tx[tcnext],ty[tcnext]) == 0) {
-		tcdir = rotation;
+		tcdir = direction;
 	}
 
 	talpha = 1;
