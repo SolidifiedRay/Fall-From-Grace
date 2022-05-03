@@ -1,1 +1,1 @@
-text = "In an empty box agian \neh Sinmer?";
+text = "In an empty box agian \neh Sinnner?";
