@@ -1,0 +1,1 @@
+text = "Clever. Wrong, but clever"

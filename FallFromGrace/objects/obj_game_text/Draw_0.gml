@@ -1,4 +1,5 @@
 draw_set_color(c_white);
+/*
 if room == Level1 {
 	draw_set_font(Font2);
 	draw_text(20, 30, "(Shift) Through Space");
@@ -8,6 +9,7 @@ if room == Level1 {
 	draw_text(700, 250, "Hate the Sin");
 	draw_text(700, 270, "Hate the Sinner");
 }
+
 
 if room == Level2 {
 	draw_set_font(Font2);
@@ -28,3 +30,4 @@ if room == Level4 {
  	draw_text(290, 650, "eh Sinmer?");
 	draw_text(220, 250, "Clever. Wrong, but clever");
 }
+*/
