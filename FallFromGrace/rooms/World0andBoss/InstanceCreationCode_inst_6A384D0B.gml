@@ -1,0 +1,1 @@
+text="Excellent! Not everything is a rush, though.\nRelax,have some fun here, we've got years ahead of us."

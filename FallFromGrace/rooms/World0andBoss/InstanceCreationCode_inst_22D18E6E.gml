@@ -1,0 +1,1 @@
+text="Watch out, the mana is thick here.\nGreat for rituals, but watch the walls above."

@@ -1,0 +1,1 @@
+text="I could go on for hours, but...\nIt seems we've reached the main event."

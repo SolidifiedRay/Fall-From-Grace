@@ -1,0 +1,1 @@
+text="Eh, you knew you could do rituals here already?\nAre you...planning a present for me, mortal?"

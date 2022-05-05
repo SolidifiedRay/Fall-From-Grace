@@ -1,0 +1,1 @@
+text="I mean, as a mortal, you probably\nhaven't really heard of the Ethereal, but..."

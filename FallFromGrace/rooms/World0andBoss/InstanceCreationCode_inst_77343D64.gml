@@ -1,0 +1,1 @@
+text="Well if you didn't figure out how to\nsling your weight around before, mortal... you will here!"

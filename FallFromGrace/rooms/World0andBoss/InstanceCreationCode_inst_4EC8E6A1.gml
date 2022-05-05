@@ -1,0 +1,1 @@
+text="A place with no word for abundance,\nas it has never dreamt a day without."
