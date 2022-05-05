@@ -24,11 +24,11 @@ if (not dead){
 		cooldown--;
 		if (!obj_player.dead && cooldown < 0) {
 			switch (clock mod 215) {
-				case 0: pattern = 2; break;
-				case 45: pattern = 3; break;
-				case 90: pattern = 1; break;
+				case 0: pattern = 1; break;
+				case 45: pattern = 2; break;
+				case 90: pattern = 3; break;
 				case 135: pattern = 4; break;
-				case 180: pattern = 2; break;
+				case 180: pattern = 5; break;
 			}
 			
 			switch(pattern) {
@@ -121,6 +121,21 @@ if (not dead){
 						newfr = instance_create_layer(x+lengthdir_x(rad,dir2),y+lengthdir_y(rad,dir2),"rifts",obj_futurerift);
 						newfr.alarm[0] = (180-abs(dir-dir2))*60/180 + 10;
 					}
+					break;
+				case 5: // a basic shot
+					dir = point_direction(x,y,obj_player.x,obj_player.y);
+					for (i = -30; i <= 30; i += 15) {
+						newrs = instance_create_depth(x,y,depth,obj_riftslash);
+						newrs.alarm[0] = 180;
+						newrs.riftsize = 32;
+						newrs.lentospawn = 32;
+						newrs.direction = dir+i;
+						newrs.speed = 24;
+						newrs.riftduration=40;
+						newrs.warningduration=25;
+						
+					}
+					break;
 			}
 			pattern = 0;
 		}

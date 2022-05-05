@@ -11,6 +11,7 @@ if disttraveled > lentospawn {
 	newrift = instance_create_layer(x,y, "Collision", obj_futurerift);
 	newrift.alarm[0] = warningduration;
 	newrift.riftduration = riftduration;
+	newrift.riftsize = riftsize;
 	disttraveled -= lentospawn; 
 }
 
