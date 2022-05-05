@@ -7,7 +7,7 @@ color = c_white;
 timer = tlen;
 
 
-lentospawn=32;
+lentospawn=64;
 disttraveled=0;
 riftduration = 60;
 warningduration = 60;

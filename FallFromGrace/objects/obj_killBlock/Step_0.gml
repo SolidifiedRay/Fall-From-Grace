@@ -28,8 +28,5 @@ if (point_distance(obj_player.x, obj_player.y, xrand, yrand) < 500) {
 }
 */
 
-outline._x1 = bbox_left - w;
-outline._x2 = bbox_right + w;
-outline._y1 = bbox_top - w;
-outline._y2 = bbox_bottom + w;
+
 
