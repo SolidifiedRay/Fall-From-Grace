@@ -27,7 +27,7 @@ if (not dead){
 				case 0: pattern = 2; break;
 				case 45: pattern = 3; break;
 				case 90: pattern = 1; break;
-				case 135: pattern = 3; break;
+				case 135: pattern = 4; break;
 				case 180: pattern = 2; break;
 			}
 			
@@ -113,6 +113,14 @@ if (not dead){
 					newrs.direction = 180;
 					newrs.alarm[0]=10;
 					break;
+				case 4: //4ing
+					rad = point_distance(x,y,obj_player.x,obj_player.y);
+					dir = point_direction(x,y,obj_player.x,obj_player.y);
+					for (i = -180; i < 180; i += 360 / 45) {
+						dir2 = dir + i;
+						newfr = instance_create_layer(x+lengthdir_x(rad,dir2),y+lengthdir_y(rad,dir2),"rifts",obj_futurerift);
+						newfr.alarm[0] = (180-abs(dir-dir2))*60/180 + 10;
+					}
 			}
 			pattern = 0;
 		}
