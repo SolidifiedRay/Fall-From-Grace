@@ -10,7 +10,9 @@ checkpoint0 = noone;
 starradius = 32;
 cooldown = 0;
 
-angle = 12;
+rotations = 3;
+checkpointcount = 90;
+angle = rotations * 360 / checkpointcount;
 
 checkpointcount = 120;
 offset = 0;

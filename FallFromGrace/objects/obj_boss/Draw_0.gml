@@ -6,7 +6,7 @@ draw_set_alpha(1);
 var steps = 24;
 
 draw_primitive_begin(pr_trianglestrip);
-for (i = 0; i <= 2*angle * obj_player.checknum; i += 360 / steps) {
+for (i = 0; i <= angle * obj_player.checknum; i += 360 / steps) {
 	orad = 1/20 * i + 4;
 	irad = 1/20 * i;
 	_xi = lengthdir_x(irad, i);
@@ -14,22 +14,6 @@ for (i = 0; i <= 2*angle * obj_player.checknum; i += 360 / steps) {
 	
 	_xo = lengthdir_x(orad, i);
 	_yo = lengthdir_y(orad, i);
-
-
-	draw_vertex(x+_xi, y-_yi);
-	draw_vertex(x+_xo, y-_yo);
-}
-draw_primitive_end();
-
-draw_primitive_begin(pr_trianglestrip);
-for (i = 0; i <= 2*angle * obj_player.checknum; i += 360 / steps) {
-	orad = 1/20 * i + 4;
-	irad = 1/20 * i;
-	_xi = lengthdir_x(irad, -i);
-	_yi = lengthdir_y(irad, -i);
-	
-	_xo = lengthdir_x(orad, -i);
-	_yo = lengthdir_y(orad, -i);
 
 
 	draw_vertex(x+_xi, y-_yi);

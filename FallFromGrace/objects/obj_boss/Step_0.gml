@@ -113,10 +113,12 @@ if (not dead){
 					newrs.direction = 180;
 					newrs.alarm[0]=10;
 					break;
-				case 4: //4ing
+				case 4: //ring
 					rad = point_distance(x,y,obj_player.x,obj_player.y);
 					dir = point_direction(x,y,obj_player.x,obj_player.y);
-					for (i = -180; i < 180; i += 360 / 45) {
+					perim = 2*pi*rad;
+					steps = perim div 64;
+					for (i = -180; i < 180; i += 360 / steps) {
 						dir2 = dir + i;
 						newfr = instance_create_layer(x+lengthdir_x(rad,dir2),y+lengthdir_y(rad,dir2),"rifts",obj_futurerift);
 						newfr.alarm[0] = (180-abs(dir-dir2))*60/180 + 10;
@@ -124,15 +126,15 @@ if (not dead){
 					break;
 				case 5: // a basic shot
 					dir = point_direction(x,y,obj_player.x,obj_player.y);
-					for (i = -30; i <= 30; i += 15) {
+					for (i = -30; i <= 30; i += 30) {
 						newrs = instance_create_depth(x,y,depth,obj_riftslash);
-						newrs.alarm[0] = 180;
+						newrs.alarm[0] = 60;
 						newrs.riftsize = 32;
-						newrs.lentospawn = 32;
+						newrs.lentospawn = 64;
 						newrs.direction = dir+i;
 						newrs.speed = 24;
-						newrs.riftduration=40;
-						newrs.warningduration=25;
+						newrs.riftduration=30;
+						newrs.warningduration=30;
 						
 					}
 					break;
