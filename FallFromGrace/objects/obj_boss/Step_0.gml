@@ -2,21 +2,22 @@
 // You can write your code in this editor
 starradius = (checkpointcount - obj_player.checknum) * 1 + 32;
 if (not dead){
+	repeat(4) {
+		var stardir = random(360);
+		var stardist = random(starradius);
+
+		star = irandom(1) ? instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_star)
+		: instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_blob);
+		//star.image_blend = irandom(c_white);
+		star.image_blend = irandom(1) ? c_white : c_black;
+		star.gravity = 0.1;
+		star.gravity_direction = stardir + 180;
+		star.image_xscale = random_range(1,3);
+		star.image_yscale = star.image_xscale
+	}
 	if (checkpoint0.checked) {
 		obj_player.phaselock = true;
-		repeat(4) {
-			var stardir = random(360);
-			var stardist = random(starradius);
 
-			star = irandom(1) ? instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_star)
-			: instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_blob);
-			//star.image_blend = irandom(c_white);
-			star.image_blend = irandom(1) ? c_white : c_black;
-			star.gravity = 0.1;
-			star.gravity_direction = stardir + 180;
-			star.image_xscale = random_range(1,3);
-			star.image_yscale = star.image_xscale
-		}
 	
 		if (!obj_player.dead && clock > 60) {
 		
@@ -119,6 +120,9 @@ if (not dead){
 			dead = true;
 			instance_create_depth(x,y,depth,obj_god);
 		}
+	} else { // before the boss fight starts
+		newfr = instance_create_layer(x+irandom_range(-1000,1000),y-600-irandom(256),"rifts",obj_futurerift);
+		newfr.alarm[0] = 10;
 	}
 } else {
 	obj_player.phaselock = false;
