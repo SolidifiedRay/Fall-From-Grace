@@ -165,7 +165,7 @@ if (not dead){
 			}
 		}
 	} else {
-		//angletotal = 0;
+		angletotal = 0;
 	}
 	
 	if (clock mod 4 == 0) {

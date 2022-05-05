@@ -24,7 +24,10 @@ lastangle = 0;
 
 
 checkpoint0 = instance_create_layer(x,y,"instances",obj_racecheckpoint);
-checkpoint0.image_angle = 180;
+checkpoint0.image_angle = 270;
 checkpoint0.checknum = 0;
 checkpoint0.image_yscale = 20;
+checkpoint0.image_xscale = 0.2;
 checkpoint0.visible = false;
+
+offset = 0;
