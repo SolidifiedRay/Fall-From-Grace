@@ -3,7 +3,7 @@
 
 draw_set_color(c_green);
 draw_set_alpha(1);
-draw_circle(x,y,(checkpointcount - obj_player.checknum) * 1 + 32,0);
+draw_circle(x,y,starradius,0);
 
 draw_set_alpha(0.5);
 

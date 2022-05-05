@@ -1,105 +1,128 @@
 /// @description Insert description here
 // You can write your code in this editor
+starradius = (checkpointcount - obj_player.checknum) * 1 + 32;
+if (not dead){
+	if (checkpoint0.checked) {
+		obj_player.phaselock = true;
+		repeat(4) {
+			var stardir = random(360);
+			var stardist = random(starradius);
 
-if (not dead && checkpoint0.checked){
-	obj_player.phaselock = true;
-	repeat(4) {
-		var dir = random(360);
-		var dist = random(256);
-
-		star = irandom(1) ? instance_create_layer(x+lengthdir_x(dist,dir),y+lengthdir_y(dist,dir),"instances",obj_star)
-		: instance_create_layer(x+lengthdir_x(dist,dir),y+lengthdir_y(dist,dir),"instances",obj_blob);
-		//star.image_blend = irandom(c_white);
-		star.image_blend = irandom(1) ? c_white : c_black;
-		star.gravity = 0.1;
-		star.gravity_direction = dir + 180;
-		star.image_xscale = random_range(1,3);
-		star.image_yscale = star.image_xscale
-	}
-	
-	if (!obj_player.dead && clock > 60) {
-		
-		switch (clock mod 300) {
-			case 0: pattern = 1; break;
-			case 60: pattern = 2; break;
-			case 120: pattern = 3; break;
-			case 180: pattern = 4; break;
-			case 240: pattern = 5; break;
+			star = irandom(1) ? instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_star)
+			: instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"instances",obj_blob);
+			//star.image_blend = irandom(c_white);
+			star.image_blend = irandom(1) ? c_white : c_black;
+			star.gravity = 0.1;
+			star.gravity_direction = stardir + 180;
+			star.image_xscale = random_range(1,3);
+			star.image_yscale = star.image_xscale
 		}
+	
+		if (!obj_player.dead && clock > 60) {
 		
-		//if (clock mod 15 == 0) {
-		//	newrs = instance_create_layer(x,y, "Collision", obj_riftslash)
-		//	newrs.speed =50;
-		//	newrs.direction = 0.7 * -clock;
-		//	newrs.alarm[0]=20;
-		//}
-	}
+			switch (clock mod 300) {
+				case 0: pattern = 2; break;
+				case 60: pattern = 2; break;
+				case 120: pattern = 2; break;
+				case 180: pattern = 2; break;
+				case 240: pattern = 2; break;
+			}
+		
+			//if (clock mod 15 == 0) {
+			//	newrs = instance_create_layer(x,y, "Collision", obj_riftslash)
+			//	newrs.speed =50;
+			//	newrs.direction = 0.7 * -clock;
+			//	newrs.alarm[0]=20;
+			//}
+		}
 
 	
 	
-	switch(pattern){
-		case 0:
-		break;
+		switch(pattern) {
+			case 0: break;
 		
-		case 1: //horizontal 
-			newrs = instance_create_layer(obj_player.x-150,obj_player.y, "Collision", obj_riftslash)
-			newrs.speed =50;
-			newrs.direction = 0;
-			newrs.alarm[0]=10;
-			pattern =0;
-		break;
+			case 1:
+				switch irandom(4) { // basic slash
+					case 0: //horizontal 
+						newrs = instance_create_layer(obj_player.x-150,obj_player.y, "Collision", obj_riftslash)
+						newrs.speed =50;
+						newrs.direction = 0;
+						newrs.alarm[0]=10;
+					break;
 		
-		case 2://vertical
-			newrs = instance_create_layer(obj_player.x, obj_player.y-300, "Collision",obj_riftslash)
-			newrs.speed = 50;
-			newrs.direction = -90;
-			newrs.alarm[0]=10;
-			pattern = 0;
-		break;
+					case 1://vertical
+						newrs = instance_create_layer(obj_player.x, obj_player.y-300, "Collision",obj_riftslash)
+						newrs.speed = 50;
+						newrs.direction = -90;
+						newrs.alarm[0]=10;
+					break;
 		
-		case 3://left up to right down
-			newrs = instance_create_layer(obj_player.x-150, obj_player.y-150, "Collision",obj_riftslash)
-			newrs.speed = 50;
-			newrs.direction = -45;
-			newrs.alarm[0]=10;
-			pattern = 0;
-		break;
+					case 2://left up to right down
+						newrs = instance_create_layer(obj_player.x-150, obj_player.y-150, "Collision",obj_riftslash)
+						newrs.speed = 50;
+						newrs.direction = -45;
+						newrs.alarm[0]=10;
+					break;
 		
-		case 4://right up to left down
-			newrs = instance_create_layer(obj_player.x+150, obj_player.y-150, "Collision",obj_riftslash)
-			newrs.speed = 50;
-			newrs.direction = -135;
-			newrs.alarm[0]=10;
-			pattern = 0;
-		break;
+					case 3://right up to left down
+						newrs = instance_create_layer(obj_player.x+150, obj_player.y-150, "Collision",obj_riftslash)
+						newrs.speed = 50;
+						newrs.direction = -135;
+						newrs.alarm[0]=10;
+					break;
 		
-		case 5:
-			newrs1 = instance_create_layer(obj_player.x-150, obj_player.y-150, "Collision",obj_riftslash)
-			newrs1.speed = 50;
-			newrs1.direction = -45;
-			newrs1.alarm[0]=10;
+					case 4:
+						newrs1 = instance_create_layer(obj_player.x-150, obj_player.y-150, "Collision",obj_riftslash)
+						newrs1.speed = 50;
+						newrs1.direction = -45;
+						newrs1.alarm[0]=10;
 			
-			
-			newrs2 = instance_create_layer(obj_player.x+150, obj_player.y-150, "Collision",obj_riftslash)
-			newrs2.speed = 50;
-			newrs2.direction = -135;
-			newrs2.alarm[0]=10;
-			pattern = 0;
-		break;
-			
+						newrs2 = instance_create_layer(obj_player.x+150, obj_player.y-150, "Collision",obj_riftslash)
+						newrs2.speed = 50;
+						newrs2.direction = -135;
+						newrs2.alarm[0]=10;
+					break;
+				}
+				break;
+			case 2: // lead
+				rad1 = 150;
+				rad2 = 300;
+				l1 = 500;
+				l2 = 1000;
+				dir = point_direction(0,0,obj_player.hsp, obj_player.vsp);
+				dx1 = dcos(dir);
+				dy1 = -dsin(dir);
+				
+				flip = irandom(1) ? -1 : 1;
+				dx2 = dcos(dir+90*flip);
+				dy2 = -dsin(dir+90*flip);
+				
+				newrs1 = instance_create_layer(obj_player.x+dx1*l1+dx2*rad1, obj_player.y+dy1*l1+dy2*rad1, "Collision",obj_riftslash);
+				newrs1.speed = 50;
+				newrs1.direction = dir+90*-flip;
+				newrs1.alarm[0]=10;
+				
+				flip = irandom(1) ? -1 : 1;
+				dx2 = dcos(dir+90*flip);
+				dy2 = -dsin(dir+90*flip);
+				
+				newrs1 = instance_create_layer(obj_player.x+dx1*l2+dx2*rad2, obj_player.y+dy1*l2+dy2*rad2, "Collision",obj_riftslash);
+				newrs1.speed = 60;
+				newrs1.direction = dir+90*-flip;
+				newrs1.alarm[0]=20;
+				break;
+		}
+		pattern = 0;
 		
-		
-			
-		
-		
+		clock++;
+		if (obj_player.checknum >= checkpointcount - 1) {
+			dead = true;
+			instance_create_depth(x,y,depth,obj_god);
+		}
 	}
-	clock++;
-}
-else{
-
-}
-
-if (dead) {
+} else {
 	obj_player.phaselock = false;
 	instance_destroy(obj_rift_that_disappears);
 }
+
+
