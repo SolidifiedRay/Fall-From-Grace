@@ -140,8 +140,9 @@ if (not dead){
 		}
 	}
 	
-	if (clock mod 5 == 0) {
-		newfr = instance_create_layer(x+lengthdir_x(128,stardir),y+lengthdir_y(128,stardir),"rifts",obj_futurerift);
+	if (clock mod 4 == 0) {
+		stardist = random(128);
+		newfr = instance_create_layer(x+lengthdir_x(stardist,stardir),y+lengthdir_y(stardist,stardir),"rifts",obj_futurerift);
 		newfr.alarm[0]=16;
 		newfr.riftduration = 16;
 	}
