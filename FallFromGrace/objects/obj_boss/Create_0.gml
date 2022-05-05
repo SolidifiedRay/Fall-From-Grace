@@ -15,3 +15,9 @@ angle = 12;
 checkpointcount = 120;
 offset = 0;
 visible = true;
+
+newrift = instance_create_layer(x-64,y-64,"rifts",obj_rift_that_disappears);
+newrift.image_xscale = 2;
+newrift.image_yscale = 2;
+
+

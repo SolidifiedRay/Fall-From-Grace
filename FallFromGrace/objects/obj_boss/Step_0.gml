@@ -117,7 +117,6 @@ if (not dead){
 			pattern = 0;
 		}
 		if (obj_player.dead) cooldown = 60;
-		clock++;
 		if (obj_player.checknum >= checkpointcount - 1) {
 			dead = true;
 			corpse = instance_create_depth(x,y,depth,obj_god);
@@ -141,9 +140,12 @@ if (not dead){
 		}
 	}
 	
-	newfr = instance_create_layer(x+lengthdir_x(128,stardir),y+lengthdir_y(128,stardir),"rifts",obj_futurerift);
-	newfr.alarm[0]=16;
-	newfr.riftduration = 16;
+	if (clock mod 5 == 0) {
+		newfr = instance_create_layer(x+lengthdir_x(128,stardir),y+lengthdir_y(128,stardir),"rifts",obj_futurerift);
+		newfr.alarm[0]=16;
+		newfr.riftduration = 16;
+	}
+	clock++;
 } else {
 	obj_player.phaselock = false;
 	instance_destroy(obj_rift_that_disappears);
