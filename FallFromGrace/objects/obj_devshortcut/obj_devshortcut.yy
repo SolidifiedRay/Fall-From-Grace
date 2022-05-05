@@ -4,7 +4,7 @@
     "path": "sprites/spr_x16/spr_x16.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
