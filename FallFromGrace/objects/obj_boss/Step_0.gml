@@ -134,6 +134,7 @@ if (not dead){
 				star.image_blend = irandom(1) ? c_white : c_black;
 				star.speed = stardist;
 				star.friction = stardist/irandom_range(60,80);
+				star.direction = stardir;
 				star.image_xscale = random_range(10,30);
 				star.image_yscale = star.image_xscale
 			}
