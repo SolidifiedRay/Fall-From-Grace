@@ -9,3 +9,9 @@ checkpointcount = -1;
 checkpoint0 = noone;
 starradius = 32;
 cooldown = 0;
+
+angle = 12;
+
+checkpointcount = 120;
+offset = 0;
+visible = true;
