@@ -5,4 +5,4 @@ if !obj_player.dead angletotal += anglediff;
 lastangle = point_direction(x,y,obj_player.x,obj_player.y);
 show_debug_message(angletotal);
 
-offset = 0;
+if (obj_player.dead) offset=0;

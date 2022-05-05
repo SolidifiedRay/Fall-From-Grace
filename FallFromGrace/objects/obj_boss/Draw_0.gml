@@ -14,7 +14,6 @@ for (a = 0; a < abs(angletotal); a += 360/steps) {
 	orad = (thickness+gap)/360 * i + thickness;
 	irad = (thickness+gap)/360 * i;
 	i = angletotal < 0 ? -a + offset : a + offset;
-
 	_xi = lengthdir_x(irad, i);
 	_xo = lengthdir_x(orad, i);
 
