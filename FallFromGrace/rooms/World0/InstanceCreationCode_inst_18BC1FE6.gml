@@ -1,1 +1,0 @@
-text = "[K / Space (off a wall)]\nWall jump";

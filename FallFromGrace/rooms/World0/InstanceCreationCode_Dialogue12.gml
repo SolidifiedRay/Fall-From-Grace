@@ -1,0 +1,1 @@
+text = "What you made our deal for!\nExtend your will, and ascend!";

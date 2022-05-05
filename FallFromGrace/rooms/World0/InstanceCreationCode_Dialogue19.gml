@@ -1,0 +1,1 @@
+text="Freedom, eh? And power?\nHah, to be young and ambitious again, mortal!"
