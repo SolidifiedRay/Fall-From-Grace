@@ -121,8 +121,9 @@ if (not dead){
 			instance_create_depth(x,y,depth,obj_god);
 		}
 	} else { // before the boss fight starts
-		newfr = instance_create_layer(x+irandom_range(-1000,1000),y-600-irandom(256),"rifts",obj_futurerift);
-		newfr.alarm[0] = 10;
+		newfr = instance_create_layer(x+irandom_range(-256,256),y-400-irandom(256),"rifts",obj_moving_grapple);
+		newfr.alarm[0] = 120;
+		
 	}
 } else {
 	obj_player.phaselock = false;

@@ -8,3 +8,10 @@ wall = instance_create_layer(x+sprite_width/2,y+sprite_height/2,"collision",obj_
 //wall.vsp = random_range(-3,3);
 //wall.vsp = -3;
 wall.alarm[0] = 999;
+
+
+if instance_exists(obj_boss) {
+	wall.target = obj_boss;
+	wall.gravity = 0.1;
+	wall.alarm[0] = 350;
+}
