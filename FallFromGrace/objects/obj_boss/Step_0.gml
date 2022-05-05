@@ -121,7 +121,8 @@ if (not dead){
 					for (i = -180; i < 180; i += 360 / steps) {
 						dir2 = dir + i;
 						newfr = instance_create_layer(x+lengthdir_x(rad,dir2),y+lengthdir_y(rad,dir2),"rifts",obj_futurerift);
-						newfr.alarm[0] = (180-abs(dir-dir2))*60/180 + 10;
+						newfr.alarm[0] = (180-abs(dir-dir2))*30/180 + 60;
+						newfr.riftduration = 30;
 					}
 					break;
 				case 5: // a basic shot
@@ -132,8 +133,8 @@ if (not dead){
 						newrs.riftsize = 32;
 						newrs.lentospawn = 64;
 						newrs.direction = dir+i;
-						newrs.speed = 24;
-						newrs.riftduration=30;
+						newrs.speed = 16;
+						newrs.riftduration=15;
 						newrs.warningduration=30;
 						
 					}
@@ -142,13 +143,13 @@ if (not dead){
 			pattern = 0;
 		}
 		if (obj_player.dead) cooldown = 60;
-		if (obj_player.checknum >= checkpointcount - 1) {
+		if (abs(angletotal) > 1080) {
 			dead = true;
 			corpse = instance_create_depth(x,y,depth,obj_god);
 			corpse.image_xscale = 32;
 			corpse.image_yscale = 32;
 			corpse.visible=false;
-			repeat(500) {
+			repeat(200) {
 				var stardir = random(360);
 				var stardist = random_range(10,20);
 
@@ -163,6 +164,8 @@ if (not dead){
 				star.image_yscale = star.image_xscale
 			}
 		}
+	} else {
+		//angletotal = 0;
 	}
 	
 	if (clock mod 4 == 0) {

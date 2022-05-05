@@ -10,12 +10,7 @@ checkpoint0 = noone;
 starradius = 32;
 cooldown = 0;
 
-rotations = 3;
-checkpointcount = 90;
-angle = rotations * 360 / checkpointcount;
 
-checkpointcount = 120;
-offset = 0;
 visible = true;
 
 newrift = instance_create_layer(x-64,y-64,"rifts",obj_rift_that_disappears);
@@ -23,3 +18,13 @@ newrift.image_xscale = 2;
 newrift.image_yscale = 2;
 
 grapple = instance_create_layer(x,y,"collision",obj_moving_grapple);
+
+angletotal = 0;
+lastangle = 0;
+
+
+checkpoint0 = instance_create_layer(x,y,"instances",obj_racecheckpoint);
+checkpoint0.image_angle = 180;
+checkpoint0.checknum = 0;
+checkpoint0.image_yscale = 20;
+checkpoint0.visible = false;

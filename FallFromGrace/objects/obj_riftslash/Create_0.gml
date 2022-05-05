@@ -12,3 +12,5 @@ disttraveled=0;
 riftduration = 60;
 warningduration = 45;
 riftsize = 64;
+
+
