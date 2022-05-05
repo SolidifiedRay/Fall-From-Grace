@@ -3,18 +3,21 @@
 
 draw_set_color(c_lime);
 draw_set_alpha(1);
-var steps = 24;
+var steps = 64;
 
 draw_primitive_begin(pr_trianglestrip);
-for (a = 0; a < abs(angletotal); a ++) {
+var thickness = 32;
+var gap = 8;
+for (a = 0; a < abs(angletotal); a += 360/steps) {
 	
-	i = a * sign(angletotal);
-	orad = 1/20 * i + 4;
-	irad = 1/20 * i;
+	i = a;
+	orad = (thickness+gap)/360 * i + thickness;
+	irad = (thickness+gap)/360 * i;
 	_xi = lengthdir_x(irad, i);
-	_yi = lengthdir_y(irad, i);
-	
 	_xo = lengthdir_x(orad, i);
+
+	if (angletotal < 0) i = -a;
+	_yi = lengthdir_y(irad, i);
 	_yo = lengthdir_y(orad, i);
 
 
