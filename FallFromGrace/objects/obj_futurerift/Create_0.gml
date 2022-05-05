@@ -1,6 +1,6 @@
 x = x & ~31;
 y = y & ~31;
-
+riftduration = 60;
 /// @description Insert description here
 // You can write your code in this editor
 

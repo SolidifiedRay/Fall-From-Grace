@@ -7,4 +7,4 @@ rift.y = rift.y & ~31;
 
 rift.x -= rift.sprite_width / 2;
 rift.y -= rift.sprite_height / 2;
-rift.alarm[0] = 45;
+rift.alarm[0] = riftduration;

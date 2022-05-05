@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "room components",
-    "path": "folders/Objects/room components.yy",
+    "name": "deadly",
+    "path": "folders/Objects/room components/deadly.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_futurerift",

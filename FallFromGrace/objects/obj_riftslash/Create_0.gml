@@ -9,3 +9,5 @@ timer = tlen;
 
 lentospawn=32;
 disttraveled=0;
+riftduration = 60;
+warningduration = 60;

@@ -9,7 +9,8 @@ tcounter = tcounter mod tlen;
 disttraveled+=speed;
 if disttraveled > lentospawn {
 	newrift = instance_create_layer(x,y, "Collision", obj_futurerift);
-	newrift.alarm[0] = 45;
+	newrift.alarm[0] = warningduration;
+	newrift.riftduration = riftduration;
 	disttraveled -= lentospawn; 
 }
 
