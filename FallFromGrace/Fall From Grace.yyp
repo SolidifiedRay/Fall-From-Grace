@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"World0andBoss","path":"rooms/World0andBoss/World0andBoss.yy",},"order":26,},
     {"id":{"name":"auto_tile","path":"scripts/auto_tile/auto_tile.yy",},"order":0,},
     {"id":{"name":"spr_level7","path":"sprites/spr_level7/spr_level7.yy",},"order":13,},
     {"id":{"name":"obj_spawnanim","path":"objects/obj_spawnanim/obj_spawnanim.yy",},"order":4,},
@@ -103,6 +104,7 @@
     {"id":{"name":"key_to_string","path":"scripts/key_to_string/key_to_string.yy",},"order":1,},
     {"id":{"name":"sPlayer_air","path":"sprites/sPlayer_air/sPlayer_air.yy",},"order":1,},
     {"id":{"name":"tileset_tileset2","path":"tilesets/tileset_tileset2/tileset_tileset2.yy",},"order":18,},
+    {"id":{"name":"obj_rift_that_disappears","path":"objects/obj_rift_that_disappears/obj_rift_that_disappears.yy",},"order":16,},
     {"id":{"name":"obj_death","path":"objects/obj_death/obj_death.yy",},"order":0,},
     {"id":{"name":"spr_frame","path":"sprites/spr_frame/spr_frame.yy",},"order":21,},
     {"id":{"name":"sprite_tileset22","path":"sprites/sprite_tileset22/sprite_tileset22.yy",},"order":32,},
@@ -205,6 +207,7 @@
     {"roomId":{"name":"Level5","path":"rooms/Level5/Level5.yy",},},
     {"roomId":{"name":"Setting","path":"rooms/Setting/Setting.yy",},},
     {"roomId":{"name":"BossRoom","path":"rooms/BossRoom/BossRoom.yy",},},
+    {"roomId":{"name":"World0andBoss","path":"rooms/World0andBoss/World0andBoss.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

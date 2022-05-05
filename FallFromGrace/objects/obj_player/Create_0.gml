@@ -35,6 +35,7 @@ hooklen = 0;
 
 canphase = true;
 in_phase = false;
+phaselock = false;
 can_double_jump = false;
 //in_dash = false;
 //dash_timer = 0;
@@ -61,7 +62,7 @@ instance_create_layer(x,y-64,"instances",obj_camera);
 dead = false;
 winning = false;
 
-checknum = 0;
+checknum = -1;
 
 totalframes = 0;
 frames = totalframes mod 60;

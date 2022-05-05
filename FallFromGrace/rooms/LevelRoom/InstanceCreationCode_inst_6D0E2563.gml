@@ -1,2 +1,2 @@
 sprite = spr_grappletest_icon;
-level = BossRoom;
+level = World0andBoss;

@@ -5,3 +5,5 @@ clock = 0;
 pattern = 0;
 
 checkpointcount = -1;
+
+checkpoint0 = noone;

@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (not dead){
-	
+if (not dead && checkpoint0.checked){
+	obj_player.phaselock = true;
 	repeat(4) {
 		var dir = random(360);
 		var dist = random(256);
@@ -96,6 +96,10 @@ if (not dead){
 	clock++;
 }
 else{
+
 }
 
-
+if (dead) {
+	obj_player.phaselock = false;
+	instance_destroy(obj_rift_that_disappears);
+}
