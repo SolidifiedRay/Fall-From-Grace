@@ -5,7 +5,7 @@ starradius = 1000 * hp;
 if (not dead){
 	var stardir = random(360);
 	var stardist = random(starradius);
-	repeat(8) {
+	repeat(4) {
 		var stardir = random(360);
 		var stardist = random(starradius);
 
@@ -149,6 +149,6 @@ if (not dead){
 } else {
 	obj_player.phaselock = false;
 	instance_destroy(obj_rift_that_disappears);
+	instance_destroy(grapple);
 }
-
 

@@ -20,4 +20,4 @@ newrift = instance_create_layer(x-64,y-64,"rifts",obj_rift_that_disappears);
 newrift.image_xscale = 2;
 newrift.image_yscale = 2;
 
-
+grapple = instance_create_layer(x,y,"collision",obj_moving_grapple);

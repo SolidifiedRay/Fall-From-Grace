@@ -10,4 +10,6 @@ timer = tlen;
 lentospawn=64;
 disttraveled=0;
 riftduration = 60;
-warningduration = 60;
+warningduration = 45;
+
+
