@@ -143,7 +143,7 @@ if (not dead){
 			pattern = 0;
 		}
 		if (obj_player.dead) cooldown = 60;
-		if (abs(angletotal) > 1080) {
+		if (abs(angletotal) > deadangle) {
 			dead = true;
 			corpse = instance_create_depth(x,y,depth,obj_god);
 			corpse.image_xscale = 32;

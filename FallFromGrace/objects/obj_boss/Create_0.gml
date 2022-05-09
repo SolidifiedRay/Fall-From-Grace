@@ -10,6 +10,7 @@ checkpoint0 = noone;
 starradius = 32;
 cooldown = 0;
 
+deadangle = 1080+360;
 
 visible = true;
 
