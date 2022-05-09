@@ -1,1 +1,1 @@
-text = "In an empty box again, eh Sinnner?";
+text = "In an empty box again, eh Sinner?";
