@@ -1,1 +1,1 @@
-text = "Die (K)icking \nDie Screaming"
+text = "Die Kicking \nDie Screaming"
