@@ -1,1 +1,1 @@
-next_level = 0;
+next_level = room_next(room);
