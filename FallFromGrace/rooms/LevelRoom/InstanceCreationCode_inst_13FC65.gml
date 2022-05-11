@@ -1,2 +1,2 @@
-sprite = spr_grappletest_icon;
-level = GrappleTest;
+sprite = spr_level6;
+level = Phasekick;

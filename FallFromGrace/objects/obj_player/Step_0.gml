@@ -1,12 +1,3 @@
-if (room == Level3 && place_meeting(x, y, obj_checkpoint)) {
-	LEVEL3_CHECKPOINT = true;
-}
-// respawn
-if (room == Level3 && LEVEL3_CHECKPOINT && respawn) {
-	x = obj_checkpoint.x;
-	y = obj_checkpoint.y;
-	respawn = false;
-}
 
 if (!dead) {
 

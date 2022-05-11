@@ -1,2 +1,2 @@
 sprite = spr_level3;
-level = Level3;
+level = World0andBoss;
