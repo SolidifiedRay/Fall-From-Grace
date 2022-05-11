@@ -146,6 +146,7 @@
     {"id":{"name":"obj_inputhandler","path":"objects/obj_inputhandler/obj_inputhandler.yy",},"order":0,},
     {"id":{"name":"Phasekick","path":"rooms/Phasekick/Phasekick.yy",},"order":16,},
     {"id":{"name":"spr_setting_button","path":"sprites/spr_setting_button/spr_setting_button.yy",},"order":10,},
+    {"id":{"name":"obj_save_test","path":"objects/obj_save_test/obj_save_test.yy",},"order":6,},
     {"id":{"name":"obj_nograv","path":"objects/obj_nograv/obj_nograv.yy",},"order":15,},
     {"id":{"name":"TileSetScifi","path":"tilesets/TileSetScifi/TileSetScifi.yy",},"order":14,},
     {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},"order":8,},
