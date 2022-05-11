@@ -66,6 +66,7 @@
     {"id":{"name":"obj_win","path":"objects/obj_win/obj_win.yy",},"order":3,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":3,},
     {"id":{"name":"spr_pressshift","path":"sprites/spr_pressshift/spr_pressshift.yy",},"order":24,},
+    {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},"order":5,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"spr_teleport","path":"sprites/spr_teleport/spr_teleport.yy",},"order":28,},
     {"id":{"name":"obj_setting","path":"objects/obj_setting/obj_setting.yy",},"order":4,},
