@@ -178,4 +178,12 @@ if (not dead){
 	obj_player.phaselock = false;
 	instance_destroy(obj_rift_that_disappears);
 	instance_destroy(grapple);
+	if (madegod = false) {
+		madegod = true;
+		_y = y;
+		while (!collision_point(x,_y,obj_wall,false,true)) {
+			_y++;
+		}
+		instance_create_depth(x,_y,depth-1,obj_god);
+	}
 }

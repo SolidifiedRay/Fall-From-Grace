@@ -26,7 +26,7 @@ for (a = 0; a < abs(angletotal); a += 360/steps) {
 	draw_vertex(x+_xo, y-_yo);
 }
 draw_primitive_end();
-
+if !dead {
 draw_set_alpha(0.5);
 if (checkpoint0.checked) {
 	//draw_set_colour(c_black);
@@ -34,4 +34,4 @@ if (checkpoint0.checked) {
 	draw_set_colour(c_lime);
 	draw_line_width(x,y,obj_player.x,obj_player.y,3);
 }
-
+}

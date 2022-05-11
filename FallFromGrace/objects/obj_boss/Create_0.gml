@@ -31,3 +31,5 @@ checkpoint0.image_xscale = 0.2;
 checkpoint0.visible = false;
 
 offset = 0;
+
+madegod = false;

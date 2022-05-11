@@ -30,3 +30,8 @@ star.direction = point_direction(star.x, star.y, obj_player.x, obj_player.y);
 star.speed = 1 + random(1);
 star.image_xscale = random_range(1, 3);
 star.image_yscale = star.image_xscale;
+
+if (text == noone) {
+	text = instance_create_depth(x,y,depth+1, obj_worldtext);
+	text.text = key_to_string(global.phase_key) + " TO FALL";
+}
