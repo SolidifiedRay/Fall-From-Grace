@@ -1,1 +1,0 @@
-text="Heh...I will admit it has been a while\nsince I... left the Ethereal. A conversation is nice!"

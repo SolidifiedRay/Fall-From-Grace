@@ -1,1 +1,0 @@
-text="Sill, I admire your tenacity!\nAnd hopefully even reached those lofty expectations, eh?"

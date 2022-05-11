@@ -1,1 +1,0 @@
-text="I'm touched. Sincererly, thank you.\nTo a long partnership!"

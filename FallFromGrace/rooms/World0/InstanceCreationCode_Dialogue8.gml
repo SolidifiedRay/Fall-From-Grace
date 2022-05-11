@@ -1,1 +1,0 @@
-text="Oh, you've done a lot of reading on it?\nBe assured, mortal, it's as wonderful as you've heard."
