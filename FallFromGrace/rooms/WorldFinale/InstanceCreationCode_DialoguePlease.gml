@@ -1,0 +1,1 @@
+text = "We're so close!\nPlease, you can do it!";
