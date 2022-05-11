@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 hp = (checkpointcount - obj_player.checknum) / checkpointcount;
 starradius = 1000 * hp;
 if (not dead){
@@ -180,4 +179,3 @@ if (not dead){
 	instance_destroy(obj_rift_that_disappears);
 	instance_destroy(grapple);
 }
-

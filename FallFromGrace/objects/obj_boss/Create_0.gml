@@ -6,7 +6,6 @@ pattern = 0;
 
 checkpointcount = -1;
 
-checkpoint0 = noone;
 starradius = 32;
 cooldown = 0;
 

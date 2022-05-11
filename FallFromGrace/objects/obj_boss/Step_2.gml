@@ -6,3 +6,4 @@ lastangle = point_direction(x,y,obj_player.x,obj_player.y);
 show_debug_message(angletotal);
 
 if (obj_player.dead) offset=0;
+
