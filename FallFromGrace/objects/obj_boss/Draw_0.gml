@@ -34,3 +34,4 @@ if (checkpoint0.checked) {
 	draw_set_colour(c_lime);
 	draw_line_width(x,y,obj_player.x,obj_player.y,3);
 }
+
