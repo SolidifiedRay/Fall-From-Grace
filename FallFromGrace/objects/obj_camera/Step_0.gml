@@ -58,24 +58,51 @@ camera_set_view_size(view_camera[0], lerpw, lerph);
 
 
 
+//repeat(12) {
+//	xrand = random_range(newx,newx+lerpw);
+//	yrand = random_range(newy,newy+lerpw);
+//	if (position_meeting(xrand,yrand,obj_killBlock)) {
+//		switch irandom(1) {
+//			case 0:
+//				star = instance_create_layer(xrand,yrand,"instances",obj_star);
+//				switch irandom(2) {
+//					case 0: star.image_blend = c_aqua;
+//					break;
+//					case 1: star.image_blend = c_yellow;
+//					break;
+//					default: star.image_blend = c_white;
+//					break;
+//				}
+//				break;
+//			case 1:
+//				star = instance_create_layer(xrand,yrand,"instances",obj_blob);
+//				break;
+//		}
+//	}
+//}
+
 repeat(12) {
 	xrand = random_range(newx,newx+lerpw);
 	yrand = random_range(newy,newy+lerpw);
 	if (position_meeting(xrand,yrand,obj_killBlock)) {
 		switch irandom(1) {
 			case 0:
-				star = instance_create_layer(xrand,yrand,"instances",obj_star);
 				switch irandom(2) {
-					case 0: star.image_blend = c_aqua;
+					case 0: part_particles_create(global.psystem,xrand,yrand,global.star1,1);
 					break;
-					case 1: star.image_blend = c_yellow;
+					case 1: part_particles_create(global.psystem,xrand,yrand,global.star2,1);
 					break;
-					default: star.image_blend = c_white;
+					default: part_particles_create(global.psystem,xrand,yrand,global.star3,1);
 					break;
 				}
 				break;
 			case 1:
-				star = instance_create_layer(xrand,yrand,"instances",obj_blob);
+				switch irandom(3) {
+					case 0: part_particles_create(global.psystem,xrand,yrand,global.blob1,1);
+					break;
+					default: part_particles_create(global.psystem,xrand,yrand,global.blob2,1);
+					break;
+				}
 				break;
 		}
 	}
