@@ -4,7 +4,7 @@
     "path": "sprites/spr_respawn/spr_respawn.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
