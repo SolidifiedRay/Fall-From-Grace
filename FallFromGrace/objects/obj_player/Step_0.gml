@@ -1,4 +1,4 @@
-
+part_emitter_region(global.psystem,global.pemitter,x,aimx,y,aimy,ps_shape_line,ps_distr_linear);
 if (!dead) {
 
 	// ============ Input Handling ============
@@ -228,6 +228,8 @@ if (!dead) {
 			}
 		
 		}
+		
+
 		aimy--;
 		aimx+=facing;
 		var _list = ds_list_create();
@@ -246,7 +248,7 @@ if (!dead) {
 		ds_list_destroy(_list);
 	}
 	// aimsprite = aimtrue ? spr_aimtrue : spr_aimfalse;
-
+	
 	if (hookdown) {
 		/*
 		if (instance_number(obj_grapplehook) == 0 && instance_number(obj_grapplepoint) == 0) {
@@ -392,6 +394,14 @@ if (!dead) {
 	x += hsp;
 	y += vsp;
 
+	if (instance_number(obj_grapplepoint) > 0) {
+		part_emitter_burst(global.psystem,global.pemitter,global.ropeactive,50);
+	} else if (aimtrue) {
+		part_emitter_burst(global.psystem,global.pemitter,global.ropetrue,50);
+	} else {
+		part_emitter_burst(global.psystem,global.pemitter,global.ropefalse,20);
+	}
+
 	/*
 	if (in_phase) {
 		dir = random(360);
@@ -506,3 +516,6 @@ spd = point_distance(0,0,hsp,vsp);
 frames = totalframes mod 60;
 seconds = (totalframes div 60) mod 60;
 minutes = (totalframes div 60) div 60;
+
+
+
