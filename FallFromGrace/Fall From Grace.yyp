@@ -114,6 +114,7 @@
     {"id":{"name":"spr_aimfalse","path":"sprites/spr_aimfalse/spr_aimfalse.yy",},"order":30,},
     {"id":{"name":"spr_camerapoint","path":"sprites/spr_camerapoint/spr_camerapoint.yy",},"order":18,},
     {"id":{"name":"spr_level5","path":"sprites/spr_level5/spr_level5.yy",},"order":8,},
+    {"id":{"name":"obj_playlist","path":"objects/obj_playlist/obj_playlist.yy",},"order":4,},
     {"id":{"name":"obj_checkpoint_manager","path":"objects/obj_checkpoint_manager/obj_checkpoint_manager.yy",},"order":1,},
     {"id":{"name":"TileSetNeonIndustry","path":"tilesets/TileSetNeonIndustry/TileSetNeonIndustry.yy",},"order":16,},
     {"id":{"name":"spr_blob","path":"sprites/spr_blob/spr_blob.yy",},"order":17,},

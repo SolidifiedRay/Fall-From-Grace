@@ -181,5 +181,8 @@ if (not dead){
 	if (!madegod) {
 		madegod = true;
 		instance_create_depth(x,y,depth-2,obj_god);
+		var dies = audio_play_sound(sfx_dies,0,0);
+		audio_sound_pitch(dies,0.5);
+		audio_sound_gain(dies,1,0);
 	}
 }
