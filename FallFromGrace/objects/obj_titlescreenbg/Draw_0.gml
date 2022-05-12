@@ -1,4 +1,4 @@
-var jiggle = 16;
+var jiggle = room == Start ? 16 : 2;
 var x1 = random(jiggle);
 var x4 = random(jiggle);
 var x2 = room_width - random(jiggle);

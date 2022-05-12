@@ -17,7 +17,7 @@ repeat(12){
 			}
 			break;
 		case 1:
-			star = instance_create_layer(xrand,yrand,"instances",obj_blob);
+			star = instance_create_depth(xrand,yrand,depth+1,obj_blob);
 			break;
 	}
 	star.image_xscale = random_range(0.5,2);
