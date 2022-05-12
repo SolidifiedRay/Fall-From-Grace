@@ -394,13 +394,13 @@ if (!dead) {
 	x += hsp;
 	y += vsp;
 
-	if (instance_number(obj_grapplepoint) > 0) {
-		part_emitter_burst(global.psystem,global.pemitter,global.ropeactive,50);
-	} else if (aimtrue) {
-		part_emitter_burst(global.psystem,global.pemitter,global.ropetrue,50);
-	} else {
-		part_emitter_burst(global.psystem,global.pemitter,global.ropefalse,20);
-	}
+	//if (instance_number(obj_grapplepoint) > 0) {
+	//	part_emitter_burst(global.psystem,global.pemitter,global.ropeactive,25);
+	//} else if (aimtrue) {
+	//	part_emitter_burst(global.psystem,global.pemitter,global.ropetrue,25);
+	//} else {
+	//	part_emitter_burst(global.psystem,global.pemitter,global.ropefalse,10);
+	//}
 
 	/*
 	if (in_phase) {

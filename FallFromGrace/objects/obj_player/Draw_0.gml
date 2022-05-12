@@ -113,73 +113,56 @@ if (!dead) {
 	
 	//draw_circle(x,y,radius,false);
 	
-	//if (instance_number(obj_grapplepoint) > 0) {
-	//	draw_set_colour(c_aqua);
-	//	draw_line_width(x,y,obj_grapplepoint.x,obj_grapplepoint.y,3);
-	//}
+	if (instance_number(obj_grapplepoint) > 0) {
+		draw_set_colour(c_aqua);
+		draw_line_width(x,y,obj_grapplepoint.x,obj_grapplepoint.y,3);
+	}
 
-	//if (instance_number(obj_grapplehook) > 0) {
-	//	draw_set_colour(c_aqua);
-	//	draw_line_width(x,y,obj_grapplehook.x,obj_grapplehook.y,2);
-	//}
+	if (instance_number(obj_grapplehook) > 0) {
+		draw_set_colour(c_aqua);
+		draw_line_width(x,y,obj_grapplehook.x,obj_grapplehook.y,2);
+	}
 
-	//draw_set_colour(c_black);
-	//if (in_phase) draw_set_colour(c_white);
-	//if (instance_number(obj_grapplepoint) > 0) {
-	//	draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),8);
+	draw_set_colour(c_black);
+	if (in_phase) draw_set_colour(c_white);
+	if (instance_number(obj_grapplepoint) > 0) {
+		draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplepoint.x,obj_grapplepoint.y)),8);
 
-	//} else if (instance_number(obj_grapplehook) > 0) {
-	//	draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),8);
+	} else if (instance_number(obj_grapplehook) > 0) {
+		draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),8);
 
-	//} else {
-	//	/*
-	//	draw_set_colour(c_black);
-	//	if (in_phase) draw_set_colour(c_white);
-	//	draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),2);
-	//	draw_set_colour($3e4ffb4);
-	//	draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),1);
-	//	*/
+	} else {
+		/*
+		draw_set_colour(c_black);
+		if (in_phase) draw_set_colour(c_white);
+		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),2);
+		draw_set_colour($3e4ffb4);
+		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),1);
+		*/
 		
-	//	//aimlength = clamp(64,0, point_distance(x,y,aimx,aimy) / 2);
+		//aimlength = clamp(64,0, point_distance(x,y,aimx,aimy) / 2);
 		
-	//	thinness = 2;
-	//	thickness = 3;
+		thinness = 2;
+		thickness = 3;
 		
-	//	//aimlength = point_distance(x,y,aimx,aimy) / 4;
-	//	draw_set_colour(c_black);
-	//	if (in_phase) draw_set_colour(c_white);
-	//	//draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),thickness);
-	//	//draw_line_width(x,y,x+lengthdir_x(aimlength,rotation),y+lengthdir_y(aimlength,rotation),thickness);
-	//	//aimlength--;
-	//	//draw_set_colour($3e4fb4);
-	//	if (aimtrue) draw_set_colour(c_aqua) else draw_set_colour(c_red);
-	//	//draw_line_width(aimx,aimy,aimx-lengthdir_x(aimlength,rotation),aimy-lengthdir_y(aimlength,rotation),thinness);
-	//	//draw_line_width(x,y,x+lengthdir_x(aimlength,rotation),y+lengthdir_y(aimlength,rotation),thinness);
+
+			draw_set_colour(c_black);
+			if (in_phase) draw_set_colour(c_white);
+			draw_line_width(x,y,aimx,aimy,thickness);
+			if (aimtrue) draw_set_colour(c_aqua) else draw_set_colour(c_red);
+			draw_line_width(x,y,aimx,aimy,thinness);
 		
-	//	if (aimtrue) {
-	//		//midx = (x+aimx)/2;
-	//		//midy = (y+aimy)/2;
-	//		//aimlength/=2;
-	//		//draw_set_colour(c_black);
-	//		//if (in_phase) draw_set_colour(c_white);
-	//		//draw_line_width(midx,midy,midx-lengthdir_x(aimlength,rotation),midy-lengthdir_y(aimlength,rotation),thickness);
-	//		//draw_line_width(midx,midy,midx+lengthdir_x(aimlength,rotation),midy+lengthdir_y(aimlength,rotation),thickness);
-	//		//draw_set_colour(c_aqua);
-	//		//aimlength--;
-	//		//draw_line_width(midx,midy,midx-lengthdir_x(aimlength,rotation),midy-lengthdir_y(aimlength,rotation),thinness);
-	//		//draw_line_width(midx,midy,midx+lengthdir_x(aimlength,rotation),midy+lengthdir_y(aimlength,rotation),thinness);
-	//	}
 		
 			
-	//	if(hookdown) {
-	//		//draw_set_colour(c_lime);
-	//		//draw_line_width(x,y,aimx,aimy,3);
-	//	}
+		if(hookdown) {
+			draw_set_colour(c_lime);
+			draw_line_width(x,y,aimx,aimy,3);
+		}
 		
-	//	draw_set_colour(c_black);
-	//	if (in_phase) draw_set_colour(c_white);
-	//	draw_line_width(x,y,x+lengthdir_x(8,rotation),y+lengthdir_y(8,rotation),8);
-	//}
+		draw_set_colour(c_black);
+		if (in_phase) draw_set_colour(c_white);
+		draw_line_width(x,y,x+lengthdir_x(8,rotation),y+lengthdir_y(8,rotation),8);
+	}
 
 	draw_set_colour(trailcolor);
 	//draw_circle(x,y,5,false);
