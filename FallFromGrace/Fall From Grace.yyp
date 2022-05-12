@@ -80,6 +80,7 @@
     {"id":{"name":"tileset_world0","path":"tilesets/tileset_world0/tileset_world0.yy",},"order":25,},
     {"id":{"name":"sprite_ts3","path":"sprites/sprite_ts3/sprite_ts3.yy",},"order":33,},
     {"id":{"name":"background_0","path":"sprites/background_0/background_0.yy",},"order":16,},
+    {"id":{"name":"WorldFinale2","path":"rooms/WorldFinale2/WorldFinale2.yy",},"order":30,},
     {"id":{"name":"spr_level8","path":"sprites/spr_level8/spr_level8.yy",},"order":14,},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":0,},
     {"id":{"name":"spr_level9","path":"sprites/spr_level9/spr_level9.yy",},"order":15,},
@@ -202,6 +203,7 @@
     {"roomId":{"name":"Setting","path":"rooms/Setting/Setting.yy",},},
     {"roomId":{"name":"_CUTSCENETEMPLATE","path":"rooms/_CUTSCENETEMPLATE/_CUTSCENETEMPLATE.yy",},},
     {"roomId":{"name":"_WORLDTEMPLATE","path":"rooms/_WORLDTEMPLATE/_WORLDTEMPLATE.yy",},},
+    {"roomId":{"name":"WorldFinale2","path":"rooms/WorldFinale2/WorldFinale2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
