@@ -153,6 +153,7 @@
     {"id":{"name":"TileSetScifi","path":"tilesets/TileSetScifi/TileSetScifi.yy",},"order":14,},
     {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},"order":8,},
     {"id":{"name":"obj_titlescreenbg","path":"objects/obj_titlescreenbg/obj_titlescreenbg.yy",},"order":5,},
+    {"id":{"name":"spr_bgrocks","path":"sprites/spr_bgrocks/spr_bgrocks.yy",},"order":41,},
     {"id":{"name":"spr_solid","path":"sprites/spr_solid/spr_solid.yy",},"order":19,},
     {"id":{"name":"spr_spike","path":"sprites/spr_spike/spr_spike.yy",},"order":9,},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":14,},
