@@ -132,25 +132,14 @@ if (!dead) {
 		draw_line_width(x,y,x+lengthdir_x(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),y+lengthdir_y(8,point_direction(x,y,obj_grapplehook.x,obj_grapplehook.y)),8);
 
 	} else {
-		/*
-		draw_set_colour(c_black);
-		if (in_phase) draw_set_colour(c_white);
-		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),2);
-		draw_set_colour($3e4ffb4);
-		draw_line_width(x,y,x+lengthdir_x(1024,rotation),y+lengthdir_y(1024,rotation),1);
-		*/
-		
-		//aimlength = clamp(64,0, point_distance(x,y,aimx,aimy) / 2);
-		
-		thinness = 2;
-		thickness = 3;
+		var thinness = 2;
+		var thickness = 3;
 		
 
-			draw_set_colour(c_black);
-			if (in_phase) draw_set_colour(c_white);
-			draw_line_width(x,y,aimx,aimy,thickness);
-			if (aimtrue) draw_set_colour(c_aqua) else draw_set_colour(c_red);
-			draw_line_width(x,y,aimx,aimy,thinness);
+		draw_set_colour(in_phase ? c_white : c_black);
+		draw_line_width(x,y,aimx,aimy,thickness);
+		draw_set_colour(aimtrue ? c_aqua : c_red);
+		draw_line_width(x,y,aimx,aimy,thinness);
 		
 		
 			
