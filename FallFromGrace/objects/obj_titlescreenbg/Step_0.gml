@@ -1,7 +1,7 @@
 
 
 
-repeat(5){
+repeat(12){
 	xrand = random_range(0,room_width);
 	yrand = random_range(0,room_height);
 	switch irandom(1) {
